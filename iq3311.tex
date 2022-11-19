@@ -1,0 +1,2528 @@
+% Template:     Informe/Reporte LaTeX
+% Documento:    Archivo de ejemplo
+% Versión:      6.2.2 (30/01/2019)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R. @ppizarror
+%        Facultad de Ciencias Físicas y Matemáticas
+%        Universidad de Chile
+%        pablo.pizarro@ing.uchile.cl, ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/Template-Informe/]
+% Licencia MIT:    [https://opensource.org/licenses/MIT/]
+
+% ------------------------------------------------------------------------------
+% NUEVA SECCIÓN
+% ------------------------------------------------------------------------------
+% Las secciones se inician con \section, si se quiere una sección sin número se
+% pueden usar las funciones \sectionanum (sección sin número) o la función
+% \sectionanumnoi para crear el mismo título sin numerar y sin aparecer en el índice.
+
+\section{Introducción a la Ingeniería de Procesos}
+
+    \subsection{Ingeniería de Procesos}
+    
+        \subsubsection{Antecedentes históricos de la Ingeniería de Procesos}
+        
+        Los primeros procesos nacieron de las necesidades básicas del ser humano: alimentación, abrigo, desplazamiento, etc. Por ejemplo, en alimentación, los cultivos, la conservación de los alimentos. Dentro de la conservación, utilización de sal, bebidas y alimentos fermentados. Dentro del abrigo, fabricación de tela, utilización del cuero.
+        
+        Originalmente, la Ingeniería Química era Ingeniería Química Industrial, la que a su vez derivaba de la Ingeniería Mecánica. Esta especialización se debío al estudio de los procesos químicos relacionados.
+        
+        Características de los primeros procesos incluyen:
+        
+        \begin{itemize}
+            \item \textbf{Baja estandarización de los procesos}. Basados en lo empírico y sin control de calidad.
+            \item \textbf{Baja eficiencia}.
+            \item \textbf{Alto Impacto Ambiental}.
+        \end{itemize}
+        
+            \subsubsubsection{Historia}
+            
+            \begin{itemize}
+                \item \textbf{Siglo XVIII}: Revolución Industrial. Construcción de industrias. El desarrollo textil y la máquina de vapor.
+                \item \textbf{1887}: \textbf{George E. Davis} (University of Manchester) el primero que se conoce en realizar cursos de Ingeniería de Procesos.
+                \item \textbf{1888}: En el MIT, se crea la carrera de Ingeniería Química.
+                \item \textbf{1901}: Primer manual de IQ escrito por George E. Davis.
+                \item \textbf{1908}: se crea la primera asocación \textbf{American Institute Chemical Engineers}.
+                \item \textbf{1916}: \textbf{Arthur D. Little} (MIT) acuña el concepto de \textbf{Operaciones Unitarias}.
+                \item \textbf{1919}: Primera carrera de IQ en Chile, en la \textbf{Universidad de Concepción}.
+            \end{itemize}
+            
+            \newpage
+            
+            \subsubsubsection{Definición de Ingeniería Química}
+            
+            Según AIChe (\textit{American Institute Chemical Engineers}):
+            
+            \begin{quote}
+                \textit{\say{Ingeniería Química es la profesión en la cual el conocimiento de la matemática, química y otras ciencias básicas, ganados por el estudio, la experiencia y la práctica, es aplicado con juicio para desarrollar maneras económicas de usar materiales y energía para el beneficio de la humanidad.}}
+            \end{quote}
+            
+            Según Universidad Nacional de Tucumán, Argentina:
+            
+            \begin{quote}
+                \textit{\say{Rama de la Ingeniería que se dedica al estudio, síntesis, desarrollo, diseño, operación y optimización de todos aquellos procesos industriales que producen cambios físicos, químicos y/o bioquímicos en los materiales para beneficio de la humanidad.}}
+            \end{quote}
+        
+        \subsubsection{Rol del une ingeniere de procesos}
+        
+        Tareas de un Ingenierio de Procesos:
+        
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item Estudios de factibilidad técnico económica.
+                \item Diseño de equipos y procesos.
+                \item Construcción/Montaje de equipos y plantas
+                \item Control de Producción/Operación de Plantas Industriales
+                \item Control de Calidad de Productos
+                \item Compras y Comercialización
+                \item Ventas Técnicas
+                \item Control Ambiental
+                \item Investigación y Desarrollo de nuevos Productos y Procesos (innovación)
+                \item Gerencia y Administración
+                \item Capacitación de Recursos Humanos
+            \end{enumerate}
+        \end{multicols}
+        
+        \subsubsection{Campo Ocupacional}
+        
+        Campo Laboral:
+        
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item Plantas industriales
+                \item Empresas de construcción y/o montaje de plantas y equipos
+                \item Empresas proveedoras de servicios técnicos (consultoría, control de calidad, mantenimiento, etc.)
+                \item Organismos gubernamentales o no gubernamentales de acreditación, control y estándares
+                \item Instituciones de educación superior
+                \item Centros de Investigación y Desarrollo (Industriales/Académicos)
+            \end{enumerate}
+        \end{multicols}
+        
+        Sectores Industriales:
+        
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item Industria Minera
+                \item Industria Textil
+                \item Industria Química ej. Detergentes, pinturas, adhesivos
+                \item Alimentos y Bebidas
+                \item Siderúrgica/Metalúrgica
+                \item Industria Biotecnólogica (farmacéuticas, biopolímeros, etc.)
+                \item Industria sanitaria
+                \item Materiales/Polímeros/Plásticos
+                \item Petroquímica/Refinerías
+                \item Generación de energía
+            \end{enumerate}
+        \end{multicols}
+        
+        \subsubsection{Ética profesional}
+        
+        Código de Ética AIChE:
+        
+        \begin{quote}
+            \textit{\say{Defender y avanzar en la integridad, honor y dignidad de la profesión de la ingeniería mediante: ser honesto e imparcial y servir con fidelidad a sus empleades, clientes, y al público; esforzarse en aumetar la competencia y prestigio de la profesión ingenieril; y usar su conocimiento y habilidad para mejorar el bienestar humano.}}\footnote{Traducción libre}
+        \end{quote}
+        
+        Desafíos de la disciplina
+        
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item Cambio de escala
+                \item Manejo de la energía
+                \item Nuevos materiales
+                \item Nuevos (bio)productos
+                \item Sustentabilidad
+                \item Economía circular
+            \end{enumerate}
+        \end{multicols}
+        
+        Ley de \textbf{Responsabilidad Extendida del Productor} (REP):
+        
+        \begin{quote}
+            \textit{\say{La industria debe responsabilizarse por sus productos a través de la prevención de generación de residuos y de su recuperación y reciclaje}}
+        \end{quote}
+        
+        A partir del 16 de marzo 2021 comenzó a regir una nueva etapa de la Ley \textbf{REP}, que establece que para 2034 las empresas deberán recolectar los residuos de envases y embalajes de 80\% de las viviendas del país.
+        
+        \subsubsection{Ejemplos de procesos químicos y biotecnológicos: Producción de celulosa Kraft}
+        
+        Chile exporta 2 millones de toneladas anuales de celulosa.
+        
+        \insertimagerightline[\label{fig:celulosa}]{esquemas/celulosa.png}{0.2}{3}{Molécula de celulosa}
+    
+        Celulosa: \textit{\say{nombre genérico para un amplio rango de productos compuestos por fibras naturales, contenido principalmente en árboles y plantas. Biopolímero de glucosa (\textbf{Figura \ref{fig:celulosa}}) con enlaces \(\beta\;1-4\) presente comúnmente en plantas.}}
+        \newline
+        
+        Etapas de producción:
+        
+        \begin{enumerate}
+            \item \textbf{Preparación de la madera y cocción}: Dependiendo del proceso se puede optar por varias materias primas, en este caso serán chips de madera. Estructuras vegetales contienen otros compuestos además de celulosa, como la lignina. La primera etapa consiste en realizar una cocción mediante digestión con sulfuro de sodio (\(N_{2}S\)) e hidróxido de sodio (\(NaOH\)) a \(150{}^{o}C\), con esto ocurre la ruptura de la lignina. La lignina se elimina en forma de licor negro, el cual puede ser reciclado.
+            \item \textbf{Blanqueo ECF}: Existen varias formas de blaqueo, en ester caso se usa Blanqueo \textit{Elemental Chlorine Free} (ECL), es decir, que no existe cloro elemental disponible, lo que genera menos contaminación. Este procesos elimina más lignina mediante digestión con dióxido de cloro, oxígeno y peróxido de hidrógeno (\(H_{2}O_{2}\)). Se intenta reciclar lo más posible.
+            \item \textbf{Secado y embalado}: Secado de la fibra, pasa a ser de \(1-2\%\) fibra a \(89-92\%\) fibra. Se obtiene una pasta de celulosa la cual se compacta a pliegos en fardos (\(250 [kg]\) o rollos de celulosa.
+            \item \textbf{Recuperación y energía}: Subproductos pueden ser utilizados. Corteza, aserrines y astillas se aprovechan en calderas, como combustible. Compuestos inorgánicos se recuperan y reutilizan, o son tratados previo a desecharse. Del licor negro que se recupera se puede obtener metanol, tall oil y trementina, el resto va a la caldera. Se obtienen también, del licor negro, fitosteroles que son añadidos a alimentos, los cuales compiten con la absorción de colesterol.
+            \item \textbf{Tratamiento de efluentes}: Tratamiento de aguas para eliminar los contaminantes antes de ser desechados. Tratamiento primario, remoción de sólidos, en esta primera etapa se utilizan filtros o decantadores. Tratamiento secundario, reducción de DBO (Demanda Bioquímica de Oxígeno), que es un índice de la cantidad de matera orgánica en el efluente. En esta etapa, se utilizan consorcios microbianos que se alimentan de los compuestos biológicos en el agua.
+            \item \textbf{Control de emisiones}: Eliminación de emisiones gaseosa, por lo general, a altas temperaturas. Procesos que se utilizan dependen del tipo particular. Se pueden utilizar filtros o procesos de lavado de gases. Los sólidos que se pueden quemar son usados como combustible. Algunos sólidos pueden ser peligrosos los cuales son tratados por empresas externas.
+        \end{enumerate}
+    
+    \subsection{Conceptos Básicos, Procesos y Representación}
+    
+    Etapas de Síntesis de Proceso:
+    
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Ingeniería de producto (\textit{¿Qué hacer?})
+            \item Ingeniería de diseño (\textit{¿Cómo hacerlo?})
+            \item Impacto Ambiental
+            \item Rentabilidad
+        \end{itemize}
+    \end{multicols}
+    
+    Para ello:
+    
+    \begin{enumerate}
+        \item Se define el problema (materias primas, producto, requerimientos)
+        \item Selección de proceso y variables de operación
+        \item Análisis de la solución obtenida
+    \end{enumerate}
+    
+        \subsubsection{Materias Primas}
+        
+        \begin{itemize}
+            \item \textbf{Productos agrícolas, ganaderos y forestales}: frutas, vegetales, animales, madera.
+            \item \textbf{Agua}: reactivo, solvente.
+            \item \textbf{Minerales}: química inorgánica
+            \item \textbf{Combustibles fósiles}: gas natural, petróleo, carbón.
+            \item \textbf{Gases}: Aire oxígeno, nitrógeno, \(CO_{2}\)
+        \end{itemize}
+        
+        \subsubsection{Restricciones y funciones objetivo}
+        
+        Objetivo de producción:
+        
+        \begin{multicols}{2}
+            \begin{itemize}
+                \item Maximizar la producción
+                \item Minimizar los costos
+                \item Maximizar la calidad
+                \item Maximizar la seguridad
+                \item Minimizar los impactos ambientales
+                \item Minimizar el uso de recursos
+            \end{itemize}
+        \end{multicols}
+        
+        Consideraciones:
+        
+        \begin{multicols}{2}
+            \begin{itemize}
+                \item Disponibilidad de las materias primas
+                \item Factor económico, ambiental y social
+                \item Seguridad del producto
+                \item Comercialización, patentes, tecnología
+            \end{itemize}
+        \end{multicols}
+    
+        \subsubsection{Proceso, Operaciones y Variables}
+        
+        \textbf{Proceso}:
+            
+        \begin{quote}
+            \textit{\say{Conjunto o secuencia de operaciones unitarias que modifican una materia prima para transformarla en un producto comercial o insumo.}}
+        \end{quote}
+        
+        \textbf{Operación unitaria}:
+        
+        \begin{quote}
+            \textit{\say{Etapa de un proceso donde se realiza una modificación específica (ej. destilación, molienda, evaporación, etc).}}
+        \end{quote}
+        
+        \textbf{Modos de Operación Unitaria}
+        
+        \begin{itemize}
+            \item \textbf{Batch}:
+            \begin{quote}
+                \textit{\say{Es un proceso que sucede a través de cargas, es decir, existe un periodo de carga, operación, descarga y limpieza por separado Por lo anterior, posee una cantidad inicial limitada de materia prima. Ejemplo cotidiano: Hervir agua.}}
+            \end{quote}
+            
+            \item \textbf{Continuo}:
+            \begin{quote}
+                \textit{\say{Es un proceso que ocurre, como su nombre lo indica, de forma continua, es decir, existe un flujo entrante en todo momento, al igual que un flujo de salida NO es necesario que la magnitud de estos flujos sean iguales. Ejemplo (\textit{no tan}) cotidiano: Represas}}
+            \end{quote}
+        \end{itemize}
+        
+        \textbf{Variable}:
+        
+        \begin{quote}
+            \textit{\say{moles, masa, composición, concentración, presión, temperatura, volumen, densidad, velocidad de flujo (y energía).}}
+        \end{quote}
+        
+        \subsubsection{Diagramas}
+        
+        Representación compacta y precisa de un proceso. Contiene gran cantidad de información técnica.
+        
+            \subsubsubsection{Diagramas de Entrada-Salida}
+            
+            Un solo bloque representa todas las operaciones involucrada en el proceso. Se indican: materias primas, reacción estequiométrica (si existe) y productos (\textbf{Figura \ref{fig:diag-e-s}}). Flechas indican movimientos de materiales. Ejemplo en \textbf{Figura \ref{fig:diag-e-s_ej}}, producción de amoniaco (\(NH_{3}\)).
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.6\textwidth]{img/esquemas/diagrama_e-s.png}
+                \caption{Diagrama de Entrada-Salida}
+                \label{fig:diag-e-s}
+            \end{figure}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.6\textwidth]{img/esquemas/diagrama_e-s_ej.png}
+                \caption{Ejemplo de diagrama de Entrada-Salida}
+                \label{fig:diag-e-s_ej}
+            \end{figure}
+            
+            \subsubsubsection{Diagramas de Bloques}
+            
+            Representación \textbf{esquemática} del proceso, donde se ilustran sus características esenciales (\textbf{Figura \ref{fig:diag_bloq_ej}}, ejemplo producción de amoniaco, \(NH_{3}\)):
+            
+            \begin{itemize}
+                \item Secuencia en que ocurren las operaciones unitarias
+                \item Equipos utilizados para realizar cada operación
+                \item Flujos de materia y energía
+            \end{itemize}
+            
+            Ejemplos de unidades de proceso:
+            
+            \begin{itemize}
+                \item \textbf{Mezclador}: Combina entradas en una salida.
+                \item \textbf{Reactor}: Reactivos a la entrada reaccionan para dar productos de salida.
+                \item \textbf{Divisor}: Divide entrada en múltiples salidas de igual composición.
+                \item \textbf{Separador}: Divide entrada en múltiples salidas de composiciones diferentes.
+            \end{itemize}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.8\textwidth]{img/esquemas/diagrama_bloq_ej.png}
+                \caption[Ejemplo de Diagrama de Bloques]{Ejemplo de Diagrama de Bloques para el procesos de producción de amoniaco (\(NH_{3}\)) \cite{murphy_introduction_2007}.}
+                \label{fig:diag_bloq_ej}
+            \end{figure}
+            
+            \subsubsubsection{Diagramas de Flujo de Proceso}
+            
+            Representación más cercana a la realidad. Se representan equipos por medio de símbolos (\textbf{Figura \ref{fig:diag_flux_equip}}). Interrelación entre equipos por medio de líneas de unión (Ejemplo en \textbf{Figura \ref{fig:diag_flux_ej}}).
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/esquemas/diagrama_flux_equip.png}
+                \caption{Esquemas de equipos para un diagrama de procesos}
+                \label{fig:diag_flux_equip}
+            \end{figure}
+            
+            Las propiedades físicas, las cantidades, las temperaturas y las presiones de los materiales, entre otros, se pueden indicar de las siguientes formas:
+            \begin{enumerate}
+                \item Colocando los datos sobre cada corriente.
+                \item Identificando la corriente con un número o letra que refiera una lista adjunta.
+                \item Adjuntando los datos en una hoja de tabulación.
+            \end{enumerate}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/esquemas/diagrama_flux_ej.png}
+                \caption[Ejemplo diagrama de flujo de procesos]{Ejemplo diagrama de flujo de procesos para la producción de amoniaco (\(NH_{3}\)) \cite{towler_chemical_2013}.}
+                \label{fig:diag_flux_ej}
+            \end{figure}
+            
+            Muy utilizados en la Ingeniería Química debido a:
+            
+            \begin{enumerate}
+                \item Ayudan al diseño y organización de la planta
+                \item Describen el proceso
+                \item Facilitan el dimensionamiento de equipos
+                \item Sirven como medio de instrucción para el personal
+                \item Ayudan a la realización de balances de masa y energía
+            \end{enumerate}
+            
+        \subsubsection{Corrientes de un Proceso}
+        
+        Flujos de materia que ingresan (alimentación) o salen (producto) de una operación unitaria o equipo. Formadas por una o varias sustancias o compuestos químicos. Formadas por una o más fases (por ejemplo, sólido en suspensión en un líquido). Una corriente se caracteriza por su composición, su presión y su temperatura.
+        
+            \subsubsubsection{Concepto de Flujo en Procesos Continuos}
+            
+            Un flujo corresponde a una cantidad de materia/energía que está pasando a través de un área transversal en una unidad de tiempo.
+            
+            El flujo puede estar compuesto de tantas especies como se estén transportando Para distinguirlas usaremos el concepto composición de flujo (\(x_{i}\)), que indica la fracción del flujo que corresponde a la especie \(i\).
+            \begin{multicols}{2}
+                \[\sum_{i} x_{i}^{F_{j}} = 1\]
+                
+                \[\sum_{i} \left ( x_{i}^{F_{j}} \cdot F_{j} \right ) = F_{j}\]
+            \end{multicols}
+        
+        \subsubsection{Cantidades y Unidades SI}
+        
+        Una dimensión es cualquier cantidad medible (tiempo, longitud, velocidad, masa, ...)
+        
+            \subsubsubsection{Cantidad primaria}
+            
+            Dimensión particular para la cual ha sido definida una escala \textbf{arbitraria} de medición (unidad) (\textbf{Tabla \ref{tab:unid_prim}}).
+            
+            \begin{table}[H]
+                \centering
+                \resizebox{\textwidth}{!}{
+                    \begin{tabular}{|l|c|c|c|c|c|}
+                        \hline
+                        \textbf{Magnitud física básica} & \multicolumn{1}{l|}{\textbf{Símbolo}} & \multicolumn{1}{l|}{\textbf{Unidad básica}} & \multicolumn{1}{l|}{\textbf{Símbolo}} & \multicolumn{1}{l|}{\textbf{Unidad cgs}} & \multicolumn{1}{l|}{\textbf{Símbolo}} \\ \hline
+                        Tiempo & T & segundo & s & segundo & s \\
+                        Longitud & L & metro & m & centímetro & cm \\
+                        Masa & M & kilogramo & kg & gramo & g \\
+                        Corriente eléctrica & I & amperio & A & estatamperio & statA \\
+                        Temperatura termodinámica & \(\Theta\) & kelvin & K & kelvin & K \\
+                        Cantidad de Sustancia & N & mol & mol & mol & mol \\
+                        Intensidad luminosa & J & candela & cd & - & - \\ \hline
+                    \end{tabular}
+                }
+                \caption{Cantidades primarias y su unidad de medida}
+                \label{tab:unid_prim}
+            \end{table}
+        
+            \subsubsubsection{Cantidad secundaria}
+            
+            Dimensión que se expresa en términos de cantidades primarias a través de leyes físicas. Ejemplo: volumen, presión, velocidad.
+        
+        \subsubsection{Reacciones químicas}
+        
+            \subsubsubsection{Ecuaciones balanceadas}
+        
+            \begin{itemize}
+                \item \textbf{\(\nu_{i}\)}: Coeficiente estequiométrico. Reactantes se definen negativos, productor positivos.
+                \item \textbf{\(\epsilon_{hi}\)}: Átomos de \(h\) en el compuesto \(i\).
+                \item Ecuación balanceada:
+                \[\sum_{i} \epsilon_{hi}\nu_{i} = 0\]
+            \end{itemize}
+            
+            \textbf{Ejemplo}:
+            
+            Ecuación no balanceada:
+            \[NH_{3} + O_{2} \rightarrow HNO_{3} + H_{2}O\]
+            
+            Sistema de ecuaciones, una ecuación por cada elemento:
+            \[
+            \begin{matrix}
+                N: & 1\nu_{NH_{3}} & + & 0\nu_{O_{2}} & + & 1\nu_{HNO_{3}} & + & 0\nu_{H_{2}O} & = & 0 \\
+                H: & 3\nu_{NH_{3}} & + & 0\nu_{O_{2}} & + & 1\nu_{HNO_{3}} & + & 2\nu_{H_{2}O} & = & 0 \\
+                O: & 0\nu_{NH_{3}} & + & 2\nu_{O_{2}} & + & 3\nu_{HNO_{3}} & + & 1\nu_{H_{2}O} & = & 0
+            \end{matrix}
+            \]
+            Solución:
+            \[\nu_{NH_{3}} = -1 \wedge \nu_{O_{2}} = -2 \wedge \nu_{HNO_{3}} = 1 \wedge \nu_{H_{2}O} = 1\]
+            
+            Ecuación balanceada:
+            \[NH_{3} + 2O_{2} \rightarrow HNO_{3} + H_{2}O\]
+            
+            \subsubsubsection{Análisis generación consumo}
+            
+            Cálculo de materias primas, productos y subproductos con reacciones múltiples. Para ello:
+            
+            \begin{enumerate}
+                \item Escribir las \(k\) reacciones balanceadas
+                \item Listar reactivos y compuestos asociando su respectivo \(\nu_{ik}\), \(i\) compuesto y \(k\) reacción.
+                \item Calcular:
+                \[\nu_{i,neto} = \sum_{k} \nu_{ik}\]
+            \end{enumerate}
+            
+            Ejemplo:
+            \[
+            \begin{matrix}
+                R_{1} & CH_{4} & + & H_{2}O & \rightarrow & CO + 3H_{2} \\
+                R_{2} & CO & + & H_{2}O & \rightarrow & CO_{2} + H_{2} \\
+                R_{3} & N_{2} & + & 3H_{2} & \rightarrow & 2NH_{3}
+            \end{matrix}
+            \]
+            
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{l c c c c}
+                    \hline
+                    \textbf{Compuesto} & \begin{tabular}[c]{@{}l@{}}\(R_{1}\) \\ \(\nu_{i1}\)\end{tabular} & \begin{tabular}[c]{@{}l@{}}\(R_{2}\) \\ \(\nu_{i2}\)\end{tabular} & \begin{tabular}[c]{@{}l@{}}\(R_{3}\) \\ \(\nu_{i3}\)\end{tabular} & \begin{tabular}[c]{@{}l@{}} \textbf{Neto} \\ \(\nu_{i,neto}\)\end{tabular} \\ \hline
+                    \(CH_{4}\) & \(-1\) &  &  & \(-1\) \\
+                    \(H_{2}O\) & \(-1\) & \(-1\) &  & \(-2\) \\
+                    \(CO\) & \(+1\) & \(-1\) &  & \(0\) \\
+                    \(H_{2}\) & \(+3\) & \(+1\) & \(-3\) & \(+1\) \\
+                    \(CO_{2}\) &  & \(+1\) &  & \(+1\) \\
+                    \(N_{2}\) &  &  & \(-1\) & \(-1\) \\
+                    \(NH_{3}\) &  &  & \(+2\) & \(+2\) \\ \hline
+                \end{tabular}
+                \caption{Ejemplo de análisis generación consumo}
+                \label{tab:ex_gen_consumo}
+            \end{table}
+            
+            Ecuación proceso neto:
+            
+            \[CH_{4} + 2H_{2}O + N_{2} \rightarrow H_{2} + CO_{2} + 2NH_{3}\]
+            
+            \subsubsubsection{Masa, Moles y Masa Molar}
+            
+            \textbf{Masa molar}:
+            
+            \begin{quote}
+                \textit{\say{masa en gramos de un \(mol\) de átomos o moléculas.}}
+            \end{quote}
+            
+            \[1 [mol] = 6.02 \cdot 10^{23} \text{ átomos o moléculas}\]
+            
+            \begin{multicols}{2}
+                \textbf{Conversión}:
+            
+                \[MM = \frac{n}{m}\]
+                
+                Con \(n\) moles y \(m\) masa en gramos.
+                
+                Para pasar de masa a moles:
+                \[n = MM \cdot m\]
+                
+                Para pasar de moles a masa:
+                \[m = \frac{n}{MM}\]
+            \end{multicols}
+            
+            \subsubsubsection{Composición de una corriente}
+            
+            \begin{multicols}{2}
+                \textbf{Fracción másica}
+            
+                \[W_{i} = \frac{m_{i}}{m_{\text{Total}}}\]
+                
+                \textbf{Fracción molar}
+                
+                \[x_{i} = \frac{n_{i}}{n_{\text{Total}}}\]
+                
+                Fracciones deben sumar 1.
+                \[W_{i} \neq x_{i}\]
+                
+                \textbf{Partes por millón (\(ppm\))}
+                
+                \[ppm = x_{i} \cdot 10^{6}\]
+                
+                \textbf{Razón de composición}
+                
+                \textbf{Razón másica}
+                
+                \[W_{i,j} = \frac{m_{i}}{m_{j}}\]
+                
+                \textbf{Razón molar}
+                
+                \[x_{i,j} = \frac{n_{i}}{n_{j}}\]
+            \end{multicols}
+
+\section{Balances de Masa en Estado Estacionario}
+
+    \subsection{Análisis de grados de Libertad}
+    
+        \subsubsection{Ley de conservación de la materia}
+        
+        Ley de Lomonósov-Lavosier (Siglo XVIII) (de conservación de la materia):
+        
+        \begin{quote}
+            \textit{\say{Nada se crea ni se destruye, sólo se transforma. La materia no se crea ni se destruye durante una reacción química, sólo se transforma.}}
+        \end{quote}
+        
+        \subsubsection{Balance de Masa para procesos en Estado Estacionario}
+        
+            \subsubsubsection{Balance de Masa}
+            
+            Ley de conservación de la masa se aplica en procesos químicos sin reacción nuclear. Se deben definir claramente los límites del sistema (\textbf{Figura \ref{fig:balance_masa_esq}}).
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.7\textwidth]{img/esquemas/balance_masa_esq.png}
+                \caption{Esquema del balance de masa sobre un volumen de control de límites definidos}
+                \label{fig:balance_masa_esq}
+            \end{figure}
+            
+            Solo interesan las corrientes que cruzan los límites del sistema:
+            \begin{equation}
+            \label{eq:balance_masa}
+                \text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo} = \text{Acumulación}
+            \end{equation}
+            
+            El balance de masa se puede aplicar a:
+            
+            \begin{enumerate}
+                \begin{minipage}{0.2\linewidth}
+                    \item Masa total
+                    \item Moles totales
+                \end{minipage}
+                \begin{minipage}{0.4\linewidth}
+                    \item Masa o moles de cada especie
+                    \item Masa o moles de átomos
+                \end{minipage}
+                \begin{minipage}{0.3\linewidth}
+                    \item Operación unitaria o equipo
+                    \item Proceso completo.
+                \end{minipage}
+            \end{enumerate}
+            
+            El sistema puede estar compuesto de una o varias operaciones unitarias (ejemplo en \textbf{Figura \ref{fig:balance_masa_ej}}.
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.9\textwidth]{img/esquemas/balance_masa_ej.png}
+                \caption[Ejemplo de balance de masa]{Ejemplo de balance de masa sobre un reactor (I), sobre el separador (II), o sobre ambas operaciones unitarias (III)}
+                \label{fig:balance_masa_ej}
+            \end{figure}
+            
+            \subsubsubsection{Proceso en Estado Estacionario}
+            
+            \textbf{Estado Estacionario (SS, \textit{Steady State})}:
+            
+            Todas las variables del proceso son independientes del tiempo (\(T, P, F, x_{i}\)). El término de acumulación en la ecuación de balance de masa (\textbf{Ecuación \ref{eq:balance_masa}}) es nulo (\textbf{Ecuación \ref{eq:balance_masa_esta}}). Esta situación en la práctica se da en procesos continuos en régimen estacionario.
+            
+            \begin{equation}
+            \label{eq:balance_masa_esta}
+                \text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo} = 0
+            \end{equation}
+            
+            \textbf{Estado Transiente (NOSS, \textit{NOn-Steady State})}:
+            
+            Corresponde al estado en que un proceso (y por ende, todas sus operaciones unitarias) o una operación unitaria en particular varía en el tiempo. El balance se transforma en una ecuación diferencial a resolver.
+            \[\frac{d(\cdot)}{dt} = \text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo}\]
+        
+        \subsubsection{Análisis de Grados de libertad (\(N_{L}\))}
+        
+        Sirve para predecir si habrá una solución completa a un problema de análisis de proceso, sin resolver el problema.
+        
+        \begin{equation}
+        \label{eq:grados_libertad}
+            \left \| N_{L} = N_{V} - N_{R} \right \| 
+        \end{equation}
+        
+        Con \(N_{L}\) grados de libertad del sistema, \(N_{V}\) número de variables del sistema y \(N_{R}\) número de restricciones del sistema.
+        
+        \begin{itemize}
+            \item \(\mathbf{N_{L} = 0}\): el sistema está totalmente \textbf{definido} (determinado) y se pueden calcular las incógnitas.
+            \item \(\mathbf{N_{L} < 0}\): el sistema está \textbf{sobredeterminado}.
+            \item \(\mathbf{N_{L} > 0}\): el sistema está \textbf{subdeterminado}, se deben definir variables para obtener una única solución al problema.
+        \end{itemize}
+        
+            \subsubsubsection{Número de variables (\(N_{V}\))}
+            
+            Variables asociadas a \underline{una corriente} con \(N_{SP}\) especies:
+            
+            \begin{itemize}
+                \begin{minipage}{0.45\linewidth}
+                    \item Flujo (\(F_{i}\))
+                    \item Composición (\(y_{i}\), líquida. \(x_{i}\), gaseosa)
+                \end{minipage}
+                \begin{minipage}{0.25\linewidth}
+                    \item Presión (\(P_{i}\))
+                    \item Temperatura (\(T_{i}\))
+                \end{minipage}
+                \begin{minipage}{0.2\linewidth}
+                    \item Entalpía (\(H_{i}\))
+                    \newline
+                    \newline
+                \end{minipage}
+            \end{itemize}
+            
+            Por cada corriente se tendría \(N_{V}\):
+            \begin{equation}
+                \label{eq:nv_1}
+                \left \| N_{SP} + 4 \right \|\text{, ya que}\;N_{SP}\rightarrow \text{composiciones}\wedge4\rightarrow F_{i}, P_{i}, T_{i}, H_{i}
+            \end{equation}
+            
+            Pero no todas las variables son independientes, ya que:
+            \[\sum_{i}^{N_{SP}} Y_{i} = 1 \wedge H_{i} = f(Y_{i}, P_{i}, T_{i})\]
+            
+            Por lo que a \textbf{Ecuación \ref{eq:nv_1}} se le debe restar 2. Teniendo un \(N_{V}\) por corriente:
+            \begin{equation}
+            \label{eq:nv_2}
+                N_{SP} + 2
+            \end{equation}
+            
+            Para un sistema con \(N_{C}\) corrientes queda:
+            \[\overset{\text{\textbf{Ecuación \ref{eq:nv_2}}} \cdot N_{C}}{\Rightarrow} N_{C}\left ( N_{SP} + 2 \right ) \overset{+\text{Balance de energía}}{\Rightarrow}\]
+            \begin{equation}
+            \label{variables_por_corriente}
+                \left \| N_{V} = N_{C}\left ( N_{SP} + 2 \right ) + 1 \right \|
+            \end{equation}
+            
+            \subsubsubsection{Número de restricciones (\(N_{R}\))}
+            
+            \begin{enumerate}
+                \item \textbf{Composiciones cero}, cuando no existe entrada/salida de una especie (\(\max({N_{SP} - 1})\) por corriente).
+                \item \textbf{Composiciones conocidas} (\(\max({N_{SP} - 1})\) por corriente)
+                \item \textbf{Balance de masa independientes}
+                \begin{itemize}
+                    \item Si no hay reacción química:
+                    \[N_{BM_{indep}} = N_{SP}\]
+                    
+                    \item Si hay reacción química:
+                    \[N_{BM_{indep}} = N_{SP} - N_{rxn\;indep}\]
+                \end{itemize}
+                Para calcular el número de reacciones químicas independientes (\(N_{rxn\;indep}\)), se calcula el rango de la matriz atómica.
+                \textbf{Matrix atómica}
+                
+                \[
+                \begin{matrix}
+                     & SP_{1} & \cdots & SP_{n} \\
+                    \begin{array}{c}
+                        EL_{1} \\
+                        \cdots \\
+                        EL_{m}
+                    \end{array} & \left (
+                    \begin{array}{c}
+                        \cdots \\
+                        \vdots \\
+                        \cdots
+                    \end{array} \right . &
+                    \begin{array}{c}
+                        \cdots \\
+                        \ddots \\
+                        \cdots
+                    \end{array} & \left .
+                    \begin{array}{c}
+                        \cdots \\
+                        \vdots \\
+                        \cdots
+                    \end{array} \right )
+                \end{matrix}
+                \]
+                
+                Con \(SP_{i}\) la especie y \(EL_{j}\) el elemento.
+                \[N_{rxn\;indep} = N_{SP} - \text{rango de la matriz, con}\]
+                \[\text{rango de la matriz} = N_{Balances}\]
+                \item \textbf{Balance de energía} (el sistema completo: \(1\))
+                \item \textbf{Datos conocidos}:
+                \begin{multicols}{3}
+                    \begin{enumerate}
+                        \item Presión
+                        \item Temperatura
+                        \item Conversión
+                        \item Rendimiento
+                        \item Exceso
+                        \item ...
+                    \end{enumerate}
+                \end{multicols}
+                \item \textbf{Identidad de composición}. En un divisor de flujo, cada salida tiene la misma composición en cada salida, solo divide el flujo.
+                
+                Número de restricciones del sistema debido a identidad de composición \(N_{R(IC)}\).
+                \[N_{R(IC)} = (N_{J} - 1 )(N_{SP} - 1)\]
+                
+                Con \(N_{J}\) número de corrientes de salida.
+            \end{enumerate}
+        
+        \subsubsection{Grados de Libertad del Sistema Integrado}
+        
+        Si se considera el sistema completo (global), se consideran solo las corrientes de entrada y salida del sistema. En cambio, si se considera cada subsistema (integrado), se consideran las corrientes de conexión. Se calculan, entonces, las restricciones por corrientes de conexión.
+        \[N_{L} = \sum_{i} {N_{L}}_{i} - \sum_{j} {N_{C}}_{j}\]
+        
+        Con \({N_{L}}_{i}\) grados de libertad del subsistema \(i\), \({N_{C}}_{j}\) variables en corrientes de conexión \(j\)
+        
+        \[{N_{C}}_{j} = {N_{C}}_{\text{en conexión}} + (N_{SP} - 1) - \text{Data en corriente}\]
+        
+        \begin{quote}
+            \textit{\say{Los grados de libertad del sistema integrado son distintos de los grados de libertad del sistema global.}}
+        \end{quote}
+        
+        Esto se debe a que al realizar el análisis integrado, se consideran las variables de las conexiones del sistema.
+    
+    \subsection{Balance de Masa sin reacción química}
+    
+        \subsubsection{Planteamiento}
+        
+        \begin{enumerate}
+            \item Dibuja diagrama del proceso.
+            \item Identificar los componentes y definir las variables de cada corriente.
+            \item Colocar información conocida en el diagrama (ej: Flujos, especies, composiciones, \(T\), \(P\), etc) en unidades congruentes (ej: masa, moles).
+            \textit{Recomendación:}
+            \begin{itemize}
+                \item Líquidos y sólidos: en masa.
+                \item Gases: en moles.
+            \end{itemize}
+            \item Defina un sistema.
+            \item Si existen reacciones químicas de estequiometría conocida, escribir ecuación que relacione el consumo de reactivos con la generación de productos.
+            \item Determinar el número de incógnitas y balances independientes.
+            \item Escribir un conjunto apropiado de balances para resolver el problema.
+            \item Definir base de cálculo y resolver las ecuaciones en unidades consistentes.
+            \item Verificar la solución (ej. Flujos \(\geq 0\); composiciones \(0 \leq x_{i} \leq 1\)).
+        \end{enumerate}
+        
+        \subsubsection{Sin reacción}
+        
+        \begin{itemize}
+            \item La masa se conseva.
+            \item Los moles se conservan si no hay reacción.
+            \item Sistema \underline{sin reacciones químicas}, el número de balances de masa independientes es igual al número de especies.
+        \end{itemize}
+        
+        Desde \textbf{Ecuación \ref{eq:balance_masa_esta}}:
+        \[\text{Flujo entrada} - \text{Flujo salida} + \cancelto{0}{\text{Generación}} - \cancelto{0}{\text{Consumo}} = 0 \Rightarrow\]
+        \begin{equation}
+        \label{eq:balance_masa_esta_sin}
+            \text{Flujo entrada} = \text{Flujo salida}
+        \end{equation}
+        
+        
+        
+        \subsubsubsection{Múltiples Sistemas}
+        
+        \begin{itemize}
+            \item Para cada sistema, se pueden plantear tantos balances de masa como especies haya en el sistema.
+            \item Los balances de masa del sistema global son dependientes de los balances de masa de los subsistemas.
+        \end{itemize}
+    
+    \subsection{Balance de Masa sin y con reacción química}
+    
+    \begin{itemize}
+        \item La masa se conserva.
+        \item Todas las variables del proceso son independientes del tiempo (\(T\), \(P\), \(F\), \(X_{i}\), \(\dots\)).
+        \item El término de acumulación del BM (Balance de Masas) es nulo (cero)
+    \end{itemize}
+    
+    \textbf{Ecuación \ref{eq:balance_masa_esta}}:
+    \[\text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo} = 0\]
+    
+        \subsubsection{Conceptos}
+        
+        \[a A + b B \rightarrow c C + d D\]
+        
+            \subsubsubsection{Condiciones estequiométricas}
+            
+            \begin{quote}
+                \textit{\say{Si se hacen reaccionar \(a\) moles de \(A\) con \(b\) moles del reactante \(B\).}}
+            \end{quote}
+        
+            \subsubsubsection{Condiciones no estequiométricas}
+            
+            \begin{quote}
+                \textit{\say{Si se hacen reaccionar \(a\) moles de \(A\) con \(f\) moles del reactante \(B\), donde \(f \neq b\).}}
+            \end{quote}
+            
+            \subsubsubsection{Cuocientes estequiométrico}
+            
+            \begin{quote}
+                \textit{\say{En una reacción balanceada, es la razón entre los coeficientes estequiométricos de dos especies que participan en la reacción.}}
+            \end{quote}
+            
+            \[\text{Cuociente estequiométrico} = \frac{b}{a}\]
+            
+            \subsubsubsection{Reactivo limitante}
+            
+            \begin{quote}
+                \textit{\say{Es el reactivo que se termina primero, cuando esto ocurre se detiene la reacción. Se calcula en base a la estequiometría de la reacción.}}
+            \end{quote}
+            
+            \subsubsubsection{Reactivo en exceso}
+            
+            \begin{quote}
+                \textit{\say{Todos los reactivos distintos al reactivo limitante; el exceso se calcula en base a la cantidad de reactivo limitante alimentado y la estequiometría de la reacción.}}
+            \end{quote}
+            
+            \subsubsubsection{Exceso (\(e\))}
+            
+            \begin{equation}
+            \label{eq:exceso}
+                \begin{matrix}
+                     e = \frac{n - n_{d}}{n_{d}} & & & \%e = \frac{n - n_{d}}{n_{d}} \cdot 100
+                \end{matrix}
+            \end{equation}
+            
+            Con \(n\) cantidad presente del reactivo en exceso y \(n_{d}\) cantidad estequiométrica requerida según el reactivo limitante.
+            
+            Si se agregan \(a\) moles de \(A\) y \(f\) moles de \(B\), donde \(f > b\):
+            \[\frac{f}{a} > \frac{b}{a} \Rightarrow
+            \begin{matrix}
+                 B\text{: reactivo en exceso} \\
+                 A\text{: reactivo limitante}
+            \end{matrix}
+            \Rightarrow \%e = \frac{f - b}{b} \cdot 100
+            \]
+            
+            \subsubsubsection{Conversión (\(\alpha\))}
+            
+            \begin{quote}
+                \textit{\say{Es la fracción del reactivo limitante que reacciona.}}
+            \end{quote}
+            
+            \[\alpha = \frac{\text{moles de reactivo limitante que reaccionan}}{\text{moles iniciales de reactivo limitante}}\]
+            \[0 \leq \alpha \leq 1\]
+            \[\alpha = 1 \Rightarrow \text{Conversión total}\]
+    
+    \subsection{Balance de Masa con reacción química}
+    
+    \textbf{Rendimiento \(R\)}:
+    \begin{quote}
+        \textit{\say{Es la razón entre los moles (o masa) de reactivo convertido en producto deseado y los moles (o masa) de reactivo alimentado.}}
+    \end{quote}
+    \[R = \frac{\text{moles (masa) reactivo convertido al producto deseado}}{\text{moles (masa) de reactivo alimentado}}\]
+    \newpage
+    
+    \textbf{Selectividad \(S\)}:
+    \begin{quote}
+        \textit{\say{Es la razón entre los moles de un reactivo (limitante) consumido para generación del producto de interés y los moles de reactivo consumido por todas las reacciones que ocurren.}}
+    \end{quote}
+    \[S = \frac{\text{moles reactivos convertido al producto deseado}}{\text{moles totales de reactivo limitante que reaccionan}} = \frac{R}{\alpha}\]
+    
+        \subsubsection{Conceptos}
+        
+            \subsubsubsection{Reciclo}
+            
+            \insertimagerightline[\label{fig:reciclo}]{esquemas/reciclo.png}{0.3}{5}{Reciclo}
+            
+            Una corriente de reciclo es una corriente que devuelve parte del material de una corriente de salida de una unidad a una corriente de entrada de esta misma unidad o de otra unidad anterior en la secuencia de proceso.
+            
+            El objetivo del reciclo es ajustar las condiciones de la corriente de salida, reutilizar material o aumentar la conversión en un proceso con reacción química, recirculando reactante (valioso) no reaccionado. \newline
+            
+            \textbf{Reciclo con reacción}:
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.5\textwidth]{img/esquemas/reciclo_reaccion.png}
+                \caption{Reciclo con reacción}
+                \label{fig:reciclo_rxn}
+            \end{figure}
+            
+            \begin{multicols}{2}
+                \begin{itemize}
+                    \item \textbf{F}: Alimentación (fresca) al proceso.
+                    \item \textbf{E}: Alimentación al reactor.
+                    \item \textbf{S}: Salida del reactor.
+                    \item \textbf{R}: Reciclo.
+                    \item \textbf{P}: Salida del proceso.
+                \end{itemize}
+            \end{multicols}
+            
+            En este caso es importante distinguir la \textbf{conversión global} (\(\alpha_{G}\)) alcanzada en el procesos global de la \textbf{conversión por pasada} (\(\alpha_{1}\)) en el reactor.
+            
+            \[
+            \begin{matrix}
+                 \alpha_{G} = \frac{(F\cdot Y_{F}) - P \cdot Y_{P}}{F \cdot Y_{F}} & & & \alpha_{1} = \frac{(E\cdot Y_{E}) - S \cdot Y_{S}}{E \cdot Y_{E}}
+            \end{matrix}
+            \]
+            
+            \[
+            \begin{matrix}
+                 E = F + R & | & S = R + P & | &\alpha_{G} \geq \alpha_{1}
+            \end{matrix}
+            \]\newline
+            
+            \subsubsubsection{Bypass}
+            
+            \insertimageleftline[\label{fig:bypass}]{esquemas/bypass.png}{0.3}{6}{Bypass}
+            
+            Una corriente de bypass es aquella que salta una etapa (o más) del proceso y va directamente a una etapa posterior.
+            
+            Se utiliza para controlar o variar la composición de una corriente de salida de una unidad. Esto se logra mezclando la corriente de bypass con la corriente de salida en proporciones adecuadas.
+            
+            \insertimagerightline[\label{fig:purga}]{esquemas/purga.png}{0.3}{5}{Purga}
+            
+            La corriente bypass permite reducir el volumen tratado en el proceso y así reducir el tamaño de los equipos.
+            
+            \subsubsubsection{Purga}
+            
+            Una corriente de purga es aquella que, en un proceso con reciclo, sale del sistema para evitar la acumulación de inertes o materiales indeseables asociados a la corriente de reciclo.
+    
+    \subsection{Balance de Masa con Equilibrio}
+    
+    \begin{itemize}
+        \item El equilibrio de una reacción provee un comportamiento límite para el proceso.
+        \item La reacción no procede hasta conversión completa.
+        \item Cada condición de equilibrio entrega relaciones de composición adicionales a los balances de masa.
+        \item El equilibrio termodinámico se aplica siempre a la corriente de salida del reactor, que debe estar en equilibrio.
+        \item Un error típico consiste en mezclar en el cálculo del equilibrio componentes de la corriente de entrada (no necesariamente en equilibrio) y de la corriente de salida.
+    \end{itemize}
+    
+        \subsubsection{Constante de Equilibrio}
+        
+        La constante de equilibrio indica la relación que deben tener los reactantes y productos entre sí, una vez alcanzada la condición de equilibrio. La constante de equilibrio puede ser expresada en función de presiones parciales (\(K_{P}\)) o concentraciones molares (\(K_{C}\)) y su valor depende de la temperatura de operación.
+        \begin{equation}
+        \label{eq:k_c}
+            \alpha_{1} A_{1} + \alpha_{2} A_{2} + \cdots \rightleftharpoons \beta_{1} B_{1} + \beta_{2} B_{2} + \cdots \Rightarrow K_{C} = \frac{\prod_{\text{Productos}} A_{i}^{\alpha_{i}}}{\prod_{\text{Reactantes}} B_{i}^{\beta_{i}}}
+        \end{equation}
+        
+        \begin{equation}
+        \label{eq:k_c_pressure}
+            K_{P} = \frac{\prod_{\text{Productos}} \left ( y_{A_{i}} \cdot P_{T} \right )^{\alpha_{i}}}{\prod_{\text{Reactantes}} \left ( y_{B_{i}} \cdot P_{T} \right )^{\beta_{i}}}
+        \end{equation}
+        
+        Ejemplo:
+        \begin{multicols}{2}
+            Con presiones:
+            \[\alpha A + \beta B \rightleftharpoons \gamma C + \delta D\]
+            \[K_{P} = \frac{\left ( y_{C} \cdot P_{T}\right )^{\gamma} \cdot \left ( y_{D} \cdot P_{T}\right )^{\delta}}{\left ( y_{A} \cdot P_{T}\right )^{\alpha} \cdot \left ( y_{B} \cdot P_{T}\right )^{\beta}}\]
+            
+            Con concentraciones
+            \[e E + f F \rightleftharpoons g G + h H\]
+            \[K_{C} = \frac{\left [ G \right ]^{g} \cdot \left [ H \right ]^{h}}{\left [ E \right ]^{e} \cdot \left [ F \right ]^{f}}\]
+        \end{multicols}
+        
+        Para gases ideales:
+        \begin{equation}
+        \label{eq:k_c_gases_id}
+            K_{P} = K_{C} \cdot \left ( RT\right )^{\Delta n}
+        \end{equation}
+        
+        Con \(\Delta n = \text{moles de productos} - \text{moles de reactantes}\).
+        
+        Para diferentes temperaturas, se utiliza la ecuación de van't Hoff:
+        \begin{equation}
+        \label{eq:vant_hoff}
+            \ln{\frac{K_{2}}{K_{1}}} = - \frac{\Delta H^{o}}{R} \left ( \frac{1}{T_{2}} - \frac{1}{T_{1}} \right )
+        \end{equation}
+        
+        Con \(K_{i}\) constante de equilibrio a temperatura absoluta \(T_{i}\), \(\Delta H^{o}\) variación de la entalpía en condiciones estándar y \(R\) constante de los gases.
+    
+    \subsection{Balance en Sistemas de una fase}
+    
+        \subsubsection{Conceptos}
+        
+        \textbf{Propiedad}:
+        
+        \begin{quote}
+            \textit{\say{característica medible (o calculable) de una sustancia.}}
+        \end{quote}
+        
+        \textbf{Estado}:
+        
+        \begin{quote}
+            \textit{\say{Un sistema se encuentra en un cierto estado cuando posee un conjunto único de propiedades (ej. \(P\), \(T\), \(r\)) en un momento dado.}}
+        \end{quote}
+        
+        \textbf{Equilibrio}:
+        
+        \begin{quote}
+            \textit{\say{Estado en que no existe tendencia alguna al cambio.}}
+        \end{quote}
+        
+        \textbf{Fase}:
+        
+        \begin{quote}
+            \textit{\say{Estado de la materia completamente homogéneo y uniforme.}}
+        \end{quote}
+        
+        \textbf{Gas Ideal}:
+        
+        \begin{quote}
+            \textit{\say{Un gas se considera ideal cuando la distancia entre las moléculas permite ignorar el efecto de las fuerzas intermoleculares y el volumen de las moléculas mismas.}}
+        \end{quote}
+    
+        \subsubsection{Gas ideal}
+        
+        \begin{figure}
+            \centering
+            \includegraphics[width=.8\textwidth]{img/graficos/ley_gases.png}
+            \caption{Ley de los Gases Ideales}
+            \label{fig:gas_ideal}
+        \end{figure}
+        
+        \begin{equation}
+        \label{eq:gas_ideal}
+            PV = nRT
+        \end{equation}
+        \newpage
+        
+        \textbf{Ley de Boyle-Mariotte}:
+        
+        \begin{minipage}{0.5\linewidth}
+            \begin{figure}
+               \centering
+               \includegraphics[width=\textwidth]{img/graficos/ley_boyle_mariotte.png}
+               \caption{Ley de Boyle-Mariotte}
+               \label{fig:pv}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}{0.4\linewidth}
+            \[P \cdot V = cte\]
+            \[\frac{P_{2}}{P_{1}} = \frac{V_{1}}{V_{2}}\]
+        \end{minipage}
+        \newline
+        
+        \textbf{Ley de Charles}:
+        
+        \begin{minipage}{0.4\linewidth}
+            \[\frac{T}{V} = cte\]
+            \[\frac{T_{2}}{T_{1}} = \frac{V_{2}}{V_{1}}\]
+        \end{minipage}
+        \begin{minipage}{0.5\linewidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/graficos/ley_charles.png}
+                \caption{Ley de Charles}
+                \label{fig:tv}
+            \end{figure}
+        \end{minipage}
+        \newline
+        \newpage
+        
+        \textbf{Ley de Gay-Lussac}
+        
+        \begin{minipage}{0.5\linewidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/graficos/ley_gay_lussac.png}
+                \caption{Ley de Gay-Lussac}
+                \label{fig:pt}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}{0.4\linewidth}
+            \[\frac{P}{T} = cte\]
+            \[\frac{P_{2}}{P_{1}} = \frac{T_{2}}{T_{1}}\]
+        \end{minipage}
+    
+            \subsubsubsection{Condiciones Normales y Estándar}
+            
+            \textbf{Condiciones normales}:
+            \[\left \| T = 25 [{}^{o}C] = 298.15 [K] \right \| \;\;  \left \| P = 1 [atm] = 101.325 [kPa] \right \|\]
+            
+            \textbf{Condiciones Estándar}:
+            
+            \begin{center}
+                \textbf{IUPAC}\footnote{IUPAC: International Union of Pure and Applied Chemistry (\href{https://iupac.org/}{\textit{website}})}: \(\left \| T = 0 [{}^{o}C] = 273.15 [K] \right \| \;\;  \left \| P = 100 [kPa] = 0.986 [atm] = 1 [bar] = 14.504 [psi]  \right \|\)
+                
+                \textbf{NIST}\footnote{NIST: National Institute of Standards and Technology (\href{https://www.nist.gov/}{\textit{website}})}: \(\left \| T = 20 [{}^{o}C] = 293.15 [K] \right \| \;\;  \left \| P = 101.325 [kPa] = 1 [atm] = 14.696 [psi]  \right \|\)
+            \end{center}
+        
+        \subsubsection{Definiciones}
+            
+        \textbf{Densidad de un gas (\(\rho\))}:
+        
+        \begin{quote}
+            \say{\textit{Masa por unidad de volumen} \( \left ( \left [ \frac{kg}{m^{3}} \right ], \left [ \frac{lb}{{pie}^{3}} \right ], \left [ \frac{g}{L} \right ], \text{etc}, \cdots \right )\). \textit{La masa contenida en un volumen unitario varía con la temperatura y la presión.}}
+        \end{quote}
+        
+        \begin{equation}
+        \label{eq:rho}
+            \rho = \frac{n \cdot P \cdot M}{V}
+        \end{equation}
+        
+        Con \(M\), masa del gas.
+        \newline
+        
+        \textbf{Peso específico relativo de un gas (\({p.e.r.}_{gas}\))}:
+        
+        \begin{quote}
+            \say{\textit{Razón entre la densidad del gas a \(P\) y \(T\) deseadas y la del aire (o un gas de referencia) a una cierta presión y temperatura.}}
+        \end{quote}
+        
+        \begin{equation}
+        \label{eq:per_gas}
+            {p.e.r.}_{gas} = \frac{\rho_{gas}(S.C.)}{\rho_{aire}(S.C.)}
+        \end{equation}
+        
+        \textbf{Escala de Temperatura}
+        
+        \begin{multicols}{2}
+            \[\Delta T \left [ {}^{o}F \right ] = \Delta T \left [ R \right ]\]
+            
+            \[\frac{\Delta T \left [ {}^{o}C \right ]}{\Delta T \left [ {}^{o}F \right ]} = 1.8\]
+            
+            \[T \left [ K \right ] = T \left [ {}^{o}C \right ] + 273.15\]
+            
+            \[\Delta T \left [ {}^{o}C \right ] = \Delta T \left [ K \right ]\]
+            
+            \[\frac{\Delta T \left [ K \right ]}{\Delta T \left [ R \right ]} = 1.8\]
+            
+            \[T \left [ R \right ] = T \left [ {}^{o}F \right ] + 460\]
+            
+        \end{multicols}
+        
+        \textbf{Mezcla de gases ideales}
+        
+        \begin{quote}
+            \say{\textit{La presión parcial de un gas \(i\) es una cantidad ficticia que corresponde a la presión que ejercería un sólo componente de la mezcla gaseosa si ocupara el mismo volumen que ocupa la mezcla, a la misma temperatura de la mezcla.}}
+        \end{quote}
+        
+        \[{P}_{T}{V}_{T} = n_{T}R{T}_{T} \wedge {P}_{i}{V}_{T} = n_{i}R{T}_{T} \Rightarrow {P}_{i} = \frac{n_{i}}{n_{T}} P_{T} \Rightarrow\]
+        \begin{equation}
+        \label{eq:p_parcial}
+            P_{i} = y_{i} P_{T}
+        \end{equation}
+        
+        Con \(y_{i}\) fracción molar del componente \(i\).
+        
+        \[P_{1} + P_{2} + \cdots + P_{n} = \sum_{i=1}^{n} P_{i} = P_{T}\]
+    
+    \subsection{Balances en sistema de Una o Varias Fases}
+    
+        \subsubsection{Gases reales}
+        
+        \begin{quote}
+            \textit{\say{Los valores de las propiedades de algunos gases en condiciones normales y a alta presión se desvían del comportamiento ideal.}}
+        \end{quote}
+        
+            \subsubsubsection{Factor de comprensibilidad (\(z\))}
+            
+            \begin{equation}
+            \label{eq:factor_compres}
+                z = \frac{PV}{nRT} = \frac{P\widehat{V}}{RT}
+            \end{equation}
+            
+            Con \(\widehat{V} = \frac{V}{n}\) volumen molar.
+            
+        \subsubsection{Ley de los Estados Correspondientes}
+            
+            \subsubsubsection{Estado crítico}
+            
+            \begin{quote}
+                \textit{\say{Para una transición de fase (gas\(\rightarrow\)líquido), es el conjunto de condiciones físicas en que la densidad de ambas fases se hacen idénticas.}}
+            \end{quote}
+            
+            \subsubsubsection{Fluido supercrítico}
+            
+            \begin{quote}
+                \textit{\say{Es un compuesto en un estado por encima del punto crítico y combina algunas de las propiedades de los gases y los líquidos.}}
+            \end{quote}
+            
+            \subsubsubsection{Diagrama PVT agua}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.55\textwidth]{img/diagramas/pvtexp.png}
+                \caption[Diagrama PVT de una sustancia que se expande al enfriarse]{Diagrama PVT de una sustancia que se expande al enfriarse \cite{nave_pvt_2017}}
+                \label{fig:pvt_agua}
+            \end{figure}
+            
+            \subsubsubsection{Parámetros reducidos}
+            
+            \begin{multicols}{3}
+                \[T_{r} = \frac{T}{T_{C}}\]
+                
+                \[P_{r} = \frac{P}{P_{C}}\]
+                
+                \[V_{r} = \frac{\widehat{V}}{\widehat{V_{C}}}\]
+                
+            \end{multicols}
+            
+            \[\Rightarrow V_{r} = \frac{\widehat{V}{P}_{C}}{R{T}_{C}}\]
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/diagramas/par_red.png}
+                \caption[Factor de Compresibilidad por presión reducida]{Factor de Compresibilidad por presión reducida \cite{cengel_termodinamica_2012}}
+                \label{fig:par_red}
+            \end{figure}
+            
+            \subsubsubsection{Diagrama de Nelson-Obert}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/diagramas/nelson_obert_1.png}
+                \caption[Gráfica Generalizada de Compresibilidad de Nelson-Obert (Presiones Bajas)]{Gráfica Generalizada de Compresibilidad de Nelson-Obert (Presiones Bajas) \cite{cengel_termodinamica_2012}}
+                \label{fig:nelson_obert_1}
+            \end{figure}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/diagramas/nelson_obert_2.png}
+                \caption[Gráfica Generalizada de Compresibilidad de Nelson-Obert (Presiones Intermedias)]{Gráfica Generalizada de Compresibilidad de Nelson-Obert (Presiones Intermedias) \cite{cengel_termodinamica_2012}}
+                \label{fig:nelson_obert_2}
+            \end{figure}
+            
+            \subsubsubsection{Ecuaciones de Estado Corregidas por no idealidades}
+            
+            \textbf{Ecuación de Van der Waals}:
+            
+            \begin{equation}
+            \label{van_der_waals}
+                \left ( P + \frac{a}{v^{2}}\right )\cdot (v-b) = RT
+            \end{equation}
+            
+            \begin{equation}
+                a=\frac{27R^{2}{T_{c}}^{2}}{64P_{c}}\wedge b=\frac{RT_{c}}{8P_{c}}
+            \end{equation}
+            
+            \textbf{Peng-Robinson}:
+            
+            \begin{equation}
+                P=\frac{RT}{v-b} - \frac{a\alpha}{v^{2}+2bv-b^{2}}
+            \end{equation}
+            \[a=0.42478\frac{R^{2}{T_{c}}^{2}}{P_{c}}\wedge b=0.08664\frac{RT_{c}}{P_{c}}\]
+            \[\alpha = \left ( 1 + \kappa \left ( 1 - {T_{r}}^{\frac{1}{2}}\right ) \right )^{2} \wedge \kappa = 0.37464 + 1.54226\omega - 0.26992 {\omega}^{2} \wedge \omega = \text{factor acéntrico}\]
+            
+            \textbf{Soave-Redlich-Kwong}:
+        
+            \begin{equation}
+                P=\frac{RT}{v-b} - \frac{a \lambda}{v(v+b)}
+            \end{equation}
+            \[a=0.42748\frac{R^{2}{T_{c}}^{2}}{P_{c}} \wedge b=0.08664\frac{RT_{c}}{P_{c}}\]
+            \[\lambda=\left ( 1 + \kappa \left ( 1-{T_{r}}^{\frac{1}{2}} \right ) \right )^{2} \wedge \kappa=0.48+1.574\omega - 0.176 \omega^{2} \wedge \omega = \text{factor acéntrico}\]
+            
+            \textbf{Redlich-Kwong}:
+        
+            \begin{equation}
+                P=\frac{RT}{v-b} - \frac{a}{\sqrt{T}v(v+b)}
+            \end{equation}
+            \[a=0.42748\frac{R^{2}{T_{c}}^{2.5}}{P_{c}} \wedge b=0.08664\frac{RT_{c}}{P_{c}}\]
+            
+            \subsubsubsection{Ecuaciones de Estado / Datos Experimentales}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.9\textwidth]{img/diagramas/error_estado.png}
+                \caption[Porcentaje de error relacionado con las distintas ecuaciones de estado para el nitrógeno]{Porcentaje de error relacionado con las distintas ecuaciones de estado para el nitrógeno \cite{cengel_termodinamica_2012}}
+                \label{fig:error_estado}
+            \end{figure}
+        
+        \subsubsection{Mezcla de Gases Reales}
+        
+        \textbf{Método de Kay}
+        
+        \begin{quote}
+            \textit{\say{Uso de valores pseudocríticos para mezclas de gases.}}
+        \end{quote}
+        
+        \begin{equation}
+        \label{eq:metodo_kay_p}
+            {{P}^{'}}_{C} = P_{C, 1}y_{1} + P_{C, 2}y_{2} + \cdots = \sum_{i} P_{C, i}y_{i}
+        \end{equation}
+        \begin{equation}
+        \label{eq:metodo_kay_t}
+            {{T}^{'}}_{C} = T_{C, 1}y_{1} + T_{C, 2}y_{2} + \cdots = \sum_{i} T_{C, i}y_{i}
+        \end{equation}
+        \[{{P}^{'}}_{r} = \frac{P}{{{P}^{'}}_{C}} \wedge {{T}^{'}}_{r} = \frac{T}{{{T}^{'}}_{C}}\]
+        
+        \subsubsection{Mezclas Líquidas}
+        
+        \begin{equation}
+        \label{eq:mezclas_liq}
+            \frac{1}{\overline{\rho}} = \sum_{i=1}^{n} \frac{x_{i}}{\rho_{i}}
+        \end{equation}
+        
+        Con \(\overline{\rho}\) la densidad promedio de la mezcla, \(\rho_{i}\) densidad del componente \(i\), \(x_{i}\) fracción molar del componente \(i\) y \(n\) el número de componentes.
+    
+    \subsection{Balances en sistema de Varias Fases}
+        
+        \subsubsection{Definiciones}
+        
+            \subsubsubsection{Punto Crítico}
+            
+            \begin{quote}
+                \textit{\say{Temperatura y presión en la cual las propiedades de la fase líquida y gaseosa de una sustancia pura son idénticas.}}
+            \end{quote}
+            
+            \subsubsubsection{Vapor}
+            
+            \begin{quote}
+                \textit{\say{Gas por debajo de su punto crítico, se puede condensar.}}
+            \end{quote}
+            
+            \subsubsubsection{Gas}
+            
+            \begin{quote}
+                \textit{\say{No condensable, por encima de su punto crítico.}}
+            \end{quote}
+            
+            \subsubsubsection{Vapor/líquido saturado}
+            
+            \begin{quote}
+                \textit{\say{Cuando vapor y líquido se encuentran en equilibrio.}}
+            \end{quote}
+        
+        \subsubsection{Separación}
+        
+            \subsubsubsection{Técnicas de separación}
+            
+            \begin{itemize}
+                \item \textbf{Mecánica}: filtración, sedimentación, centrifugación.
+                \item \textbf{Velocidad}: cromatografía.
+                \item \textbf{Equilibrio}: destilación, cristalización
+            \end{itemize}
+            
+            \subsubsubsection{Selección de metodología}
+            
+            Es mas difícil separar dos componentes en una fase que separar 2 fases (gas|líquido, sólido|líquido). La idea para un proceso de separación por equilibrio es llevar los componentes a fases distintas:
+            
+            \begin{itemize}
+                \begin{minipage}{0.3\linewidth}
+                    \item Destilación
+                \end{minipage}
+                \begin{minipage}{0.3\linewidth}
+                    \item Cristalización
+                \end{minipage}
+                \begin{minipage}{0.3\linewidth}
+                    \item Extracción con solventes
+                \end{minipage}
+            \end{itemize}
+            
+            \textbf{Separación por equilibrio}
+            
+            Se alimenta una mezcla multicomponente en una fase. En el separador se genera una segunda fase. Las composiciones de las fases son diferentes. Dependen de la termodinámica. Ambas fases tienen igual \(P\), \(T\).
+        
+            \subsubsubsection{Reglas de las fases de Gibbs}
+            
+            Se aplica solo a sistemas en equilibrio. Dos fases en contacto, sus componentes se redistribuyen hasta el equilibrio.
+            
+            Número de grados de libertad (\textbf{variables intensivas}) de un sistema de varias fases (\(P\), \(T\), \(\rho\), \(x_{i}\), \(y_{i}\)):
+            
+            \begin{equation}
+            \label{eq:reglas_fases_gibbs}
+                F = 2 + m - \pi
+            \end{equation}
+            
+            Con \(m\) número de sustancias químicas (si no existe reacción química) y \(\pi\) número de fases.
+            
+            \subsubsubsection{Medidas de desempeño}
+            
+            \textbf{Pureza fraccionaria}:
+            
+            \begin{quote}
+                \textit{\say{Cantidad de moles del componente deseado en un cierto producto por la cantidad de moles de dicho producto.}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:pureza_fraccionaria}
+                x_{ij} = \frac{\text{moles componente deseado }i\text{ en producto} j}{\text{moles de corriente de producto }j} = \frac{\dot{n}_{ij}}{\dot{n}_{j}}
+            \end{equation}
+            \newpage
+            
+            \textbf{Recuperación fraccionaria}:
+
+            \begin{quote}
+                \textit{\say{Cantidad de moles del componente deseado en un cierto producto por la cantidad de moles de cierto componente en la alimentación.}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:recuperacion_fraccionaria}
+                f_{Rik} = \frac{\text{moles componente deseado }i\text{ en producto} j}{\text{moles componente }k\text{ en la Alimentación}} = \frac{\dot{n}_{ij}}{\dot{n}_{kA}}
+            \end{equation}
+            
+            \textbf{Factor de Separación}:
+            
+            \begin{equation}
+            \label{eq:factor_separacion}
+                \alpha_{BC} = \frac{\text{moles }B\text{ en }1}{\text{moles }C\text{ en }1} \frac{\text{moles }C\text{ en }2}{\text{moles }B\text{ en }2} = \frac{\dot{n}_{B1}}{\dot{n}_{C1}} \frac{\dot{n}_{C2}}{\dot{n}_{B2}}
+            \end{equation}
+        
+        \subsubsection{Diagrama de Fases del Agua}
+        
+            \subsubsubsection{Presión de Vapor}
+            
+            \begin{quote}
+                \textit{\say{Presión de equilibrio en la que el vapor y el líquido de un componente puro están en equilibrio.}}
+            \end{quote}
+            
+            \textbf{Estimaciones}:
+            
+            \textbf{Clausius-Clapeyron}:
+            
+            \[\frac{dP^{*}}{dT} = \frac{\Delta \widehat{H}_{V}}{T \left ( \widehat{V}_{g} - \widehat{V}_{l} \right )}\]
+            
+            Con \(\Delta \widehat{H}_{V}\) calor (o entalpía) de vaporización.
+            
+            Asumiendo que el volumen del gas es mucho mayor que la del líquido y que se trata de un gas ideal:
+            
+            \[\overset{\widehat{V}_{g} >> \widehat{V}_{l}}{\Rightarrow} \frac{dP^{*}}{dT} = \frac{\Delta \widehat{H}_{V}}{T \left ( \widehat{V}_{g} \right )} \overset{\text{Gas ideal}}{=} \frac{\Delta \widehat{H}_{V} P^{*}}{RT^{2}}\]
+            
+            \[\Rightarrow \frac{dP^{*}}{P^{*}} = \frac{\Delta \widehat{H}_{V}}{RT^{2}}dT \overset{\int{}}{\Rightarrow} \overset{\Delta \widehat{H}_{V}\text{ constante en un amplio rango de }T}{\Rightarrow}\]
+            
+            \begin{equation}
+            \label{eq:clausius_clapeyron}
+                \ln{P^{*}} = -\frac{\Delta \overline{H}_{V}}{RT} + B
+            \end{equation}
+            
+            \begin{equation}
+            \label{eq:clausius_clapeyron_interval}
+                \ln{\frac{P_{2}^{*}}{P_{1}^{*}}} = -\frac{\Delta \overline{H}_{V}}{R} \left ( \frac{1}{T_{2}} - \frac{1}{T_{1}} \right )
+            \end{equation}
+            
+            \textbf{Ecuación de Antoine}:
+            \begin{equation}
+            \label{eq:antoine}
+                \ln{P^{*}} = A - \frac{B}{C+T}
+            \end{equation}
+            
+            Con \(A,B,C\) constantes.
+            
+            Diagrama de Cox (\textbf{Figura \ref{fig:diag_cox}}).
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.7\textwidth]{img/diagramas/diagrama_cox.png}
+                \caption[Diagrama de Cox]{Diagrama de Cox \cite{himmelblau_principios_1997}}
+                \label{fig:diag_cox}
+            \end{figure}
+            
+    \subsection{Equilibrio para sistemas multicomponentes}
+    
+    Involucra \(P\), \(T\) y fracciones de cada componente en las fases.
+    
+        \subsubsection{Sistema Vapor-Gas}
+        
+            \subsubsubsection{Saturación}
+            
+            \begin{quote}
+                \textit{\say{Un gas en equilibrio con un líquido, debe estar saturado con ese líquido. Si un gas a temperatura \(T\) y presión \(P\) contiene un vapor saturado cuya fracción molar es \(y_{v}\) y si este vapor es la única sustancia condensable, entonces la \textbf{presión parcial} de vapor en el gas es igual a la \textbf{presión de vapor del componente puro} a la temperatura del sistema.}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:sat}
+                P_{V} = y_{V} \cdot P = P_{V}^{*}(T)
+            \end{equation}
+            
+            \subsubsubsection{Condiciones de Saturación}
+            
+            \begin{itemize}
+                \item \(P_{V} = P_{V}^{*}(T)\): El vapor está \textbf{saturado}. Si se añade más vapor a la fase gas o se aumenta la presión total, se producirá condensación.
+                \item \(P_{V} = y_{V}\cdot P < P_{V}^{*}(T)\): El vapor está \textbf{sobrecalentado}.
+            \end{itemize}
+        
+            \subsubsubsection{Punto de Rocío}
+            
+            \begin{quote}
+                \textit{\say{Temperatura a la que se satura el único vapor sobrecalentado presente en un gas, al enfriarse a presión constante.}}
+            \end{quote}
+            
+            En saturación se cumple la \textbf{Ecuación \ref{eq:punto_rocio}}, con \(T_{PR}\) punto de rocío.
+            
+            \begin{equation}
+            \label{eq:punto_rocio}
+                P_{V} = y_{V}\cdot P = P_{V}^{*}\left ( T_{PR} \right )
+            \end{equation}
+        
+            \subsubsubsection{Grado de Sobrecalentamiento}
+            
+            \begin{quote}
+                \textit{\say{Diferencia entre la temperatura de un gas y su punto de rocío.}}
+            \end{quote}
+        
+        \subsubsection{Sistema Líquido-Vapor}
+        
+            \subsubsubsection{Diagramas Líquido-Vapor}
+            
+            \begin{quote}
+                \textit{\say{Muestran las composiciones de equilibrio de un sistema, como función de \(T\).}}
+            \end{quote}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.7\textwidth]{img/graficos/diag_l_v_etanol.png}
+                \caption{Diagrama Líquido-Vapor del Etanol}
+                \label{fig:diag_l_v_etanol}
+            \end{figure}
+            
+            En la \textbf{Figura \ref{fig:diag_l_v_etanol}} el punto \(\mathbf{D}\) representa el \textbf{punto Azeótropo}. A cierta temperatura \(T\) (marcada por los puntos \(\mathbf{A, B, C}\)) se tiene que:
+            \[f_{V} = \frac{n_{V}}{\left ( n_{V} + n_{L}\right )} = \frac{\overline{AB}}{\overline{AC}} \wedge f_{L} = \frac{n_{L}}{\left ( n_{V} + n_{L}\right )} = \frac{\overline{BC}}{\overline{AC}} \Rightarrow \frac{\frac{n_{V}}{\cancel{\left ( n_{V} + n_{L}\right )}}}{\frac{n_{L}}{\cancel{\left ( n_{V} + n_{L}\right )}}} = \frac{\frac{\overline{AB}}{\cancel{\overline{AC}}}}{\frac{\overline{BC}}{\cancel{\overline{AC}}}} \Rightarrow\]
+            \[\frac{n_{V}}{n_{L}} = \frac{\overline{AB}}{\overline{BC}}\]
+            \newpage
+        
+            \subsubsubsection{Ley de Henry}
+            
+            \begin{quote}
+                \textit{\say{Válida para fracción molar cercana a cero.}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:ley_henry}
+                P_{i} = y_{i} \cdot P_{T} = H_{i}(T) \cdot x_{i}
+            \end{equation}
+            
+            Con \(H_{i}(T)\) constante de Henry.
+        
+            \subsubsubsection{Ley de Raoult}
+        
+            \begin{quote}
+                \textit{\say{Válida para fracción molar cercana a uno (casi puro en fase líquida) o mezclas de sustancias similares.}}
+            \end{quote}
+            
+            \[P_{i} = P_{i}^{*}(T) \cdot x_{i}\]
+            
+            Ley de Dalton:
+            \[P_{i} = y_{i} \cdot P_{T} \overset{\text{Ley de Raoult}}{\Rightarrow}\]
+            
+            \begin{equation}
+            \label{eq:ley_raoult}
+                P_{i} = y_{i} \cdot P_{T} = P_{i}^{*}(T) \cdot x_{i}
+            \end{equation}
+            
+            Constante de equilibrio \(K_{i}\):
+            \[K_{i} = \frac{y_{i}}{x_{i}} = \frac{P_{i}^{*}}{P_{T}}\]
+            \begin{quote}
+                \textit{\say{En un sistema de multicomponente de dos fases, un componente en una fase está en equilibrio con el mismo componente en la otra fase.}}
+            \end{quote}
+        
+            \subsubsubsection{Punto de Burbuja}
+            
+            \begin{quote}
+                \textit{\say{Se calienta una mezcla líquida a \(P\) constante hasta que se forma una \textbf{burbuja} de vapor.}}
+            \end{quote}
+            \[P_{i} = x_{i} \cdot P_{i}^{*} \left ( T_{PB} \right )\]
+            \[P_{T} = \sum_{i} P_{i} \overset{\text{Punto de burbuja}}{=} \sum_{i} \left ( x_{i} \cdot P_{i}^{*} \left ( T_{PB} \right ) \right )\]
+            \begin{equation}
+            \label{eq:punto_burbuja}
+                y_{i} = \frac{P_{i}}{P_{T}} = \frac{x_{i} \cdot P_{i}^{*}}{P_{T}}
+            \end{equation}
+            
+            Con \(P_{i}^{*}\) obtenidos de tablas o correlaciones.
+        
+            \subsubsubsection{Punto de Rocío}
+            
+            \begin{quote}
+                \textit{\say{Se enfría una mezcla a \(P\) constante hasta que se forma una \textbf{gota} de líquido en equilibrio con el vapor.}}
+            \end{quote}
+            
+            Reescribiendo la \textbf{Ecuación \ref{eq:punto_rocio}}:
+            \[P_{i} = y_{i}\cdot P_{T} = x_{i} \cdot P_{i}^{*}\left ( T_{PR} \right ) \Rightarrow x_{i} = \frac{y_{i}\cdot P_{T}}{P_{i}^{*}\left ( T_{PR} \right )}\]
+            
+            Como:
+            \[\sum_{i}x_{i} = 1 \Rightarrow\]
+            
+            \begin{equation}
+            \label{eq:punto_rocio_2}
+                \sum_{i} \left ( \frac{y_{i}\cdot P_{T}}{P_{i}^{*}\left ( T_{PR} \right )} \right ) = 1
+            \end{equation}
+            
+            Con \(P_{i}^{*}\) obtenidos de tablas o correlaciones.
+        
+        \subsubsection{Sistema Líquido-Vapor: Saturación Parcial}
+        
+            \subsubsubsection{Sistema Aire-Vapor de agua}
+            
+            Se define:
+            
+            \begin{itemize}
+                \item \(P_{i}\): Presión parcial del vapor en la mezcla.
+                \item \(P_{i}^{*}\): Presión parcial del vapor en la mezcla si el gas se encuentra saturado a la temperatura de la mezcla (Presión de vapor).
+            \end{itemize}
+            
+            \textbf{Humedad/Saturación Relativa}:
+            
+            \begin{equation}
+            \label{eq:humedad_relativa}
+                S_{r} = \frac{P_{i}}{P_{i}^{*}}
+            \end{equation}
+            
+            \textbf{Humedad/Saturación Absoluta}:
+            
+            \begin{equation}
+            \label{eq:humedad_absoluta}
+                S_{a} = \frac{m_{\text{vapor}}}{m_{\text{gas seco}}}
+            \end{equation}
+            
+            \textbf{Humedad/Saturación molal}:
+            
+            \begin{equation}
+            \label{eq:humedad_molal}
+                S_{m} = \frac{P_{i}}{P_{T} - P_{i}} = \frac{\text{moles vapor}}{\text{moles gas libres de vapor (gas seco)}}
+            \end{equation}
+            
+            \textbf{\% Humedad/ \%Saturación (molal)}:
+            
+            \begin{equation}
+            \label{eq:per_humedad_molal}
+                S_{p} = \frac{S_{m}}{S_{m}^{*}} \cdot 100
+            \end{equation}
+        \newpage
+            
+        \subsubsection{Sistema Sólido-Líquido}
+        
+            \subsubsubsection{Saturación Sólido-Líquido}
+            
+            \begin{quote}
+                \textit{``Existe un límite en la cantidad de soluto que se puede disolver en un solvente. Depende de la temperatura.}
+                
+                \textit{``Una disolución que contiene tanta cantidad de una sustancia como es capaz de disolver se llama saturada.}
+                
+                \textit{``Si se enfría una solución saturada, la solubilidad del soluto disminuye, precipita y se forman cristales. Por lo tanto, una solución en equilibrio con cristales de un soluto, debe estar saturada con ese soluto.''}
+            \end{quote}
+            
+            \subsubsubsection{Solubilidad de diferentes solutos en el agua}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.6\textwidth]{img/graficos/solubilidad_solutos.png}
+                \caption{Solubilidad de diferentes solutos en agua a diferentes temperaturas}
+                \label{fig:solubilidad_agua}
+            \end{figure}
+        
+            \subsubsubsection{Diagrama Sólido-Líquido}
+            
+            \begin{quote}
+                \textit{\say{Muestran composiciones de equilibrio de un sistema, como función de una o más variables de éste.}}
+            \end{quote}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.95\textwidth]{img/diagramas/diagrama-s-l.png}
+                \caption[Ejemplo diagrama Sólido Líquido para el \(MgS{O}_{4}\) en \(H_{2}O\)]{Ejemplo diagrama Sólido Líquido para el \(MgS{O}_{4}\) en \(H_{2}O\) \cite{perry_perrys_1963}}
+                \label{fig:diag_s-l}
+            \end{figure}
+            
+            \subsubsubsection{Regla de la Palanca}
+            
+            \begin{quote}
+                \textit{\say{Se usa para determinar la fracción (másica/molar) de cada una de las fases de un equilibrio binario desde un diagrama de fases.}}
+                
+                \textit{\say{Si se tienen dos fases \(\alpha\), \(\beta\) en las que cada una contiene dos elementos \(A\) y \(B\), la fracción de la fase \(\alpha\) es:}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:regla_palanca}
+                x_{\alpha} = \frac{x_{B} - x_{(B, \beta)}}{x_{(B, \alpha)} - x_{(B, \beta)}}
+            \end{equation}
+            
+            Usando la \textbf{Figura \ref{fig:diag_s-l}} se puede obtener las composiciones en dos fases desde la composición total de una especie (en este caso \(MgS{O}_{4}\)). Para ello se siguen los siguientes pasos:
+            
+            \begin{enumerate}
+                \item Se ubica la fracción total de la especie en el eje de la fracción (abscisa).
+                \item Se identifica con la temperatura a la que se encuentra la mezcla (ordenada).
+                \item El punto encontrado se extiende (horizontalmente) hasta la líneas de equilibrio (líneas diagonales y verticales dentro del gráfico). Cada línea representa una fase.
+                \item Desde los puntos de intersección de cada línea de equilibrio, se busca la fracción de la especie para cada fase (abscisa).
+            \end{enumerate}
+            
+            \subsubsubsection{Propiedades coligativas}
+            
+            \textbf{Disminución de la presión de vapor}:
+            
+            \[P_{d} = \left ( 1 - x \right ) P_{d}^{*}\]
+            
+            Con \(P_{d}^{*}\) presión de vapor del disolvente puro y \(x\) la fracción mola de soluto.
+            
+            Se define \(\left ( P_{d}^{*} \right )_{e}\) la presión de vapor efectiva del disolvente en presencia de un soluto \textbf{no volátil, no disociable}. Ésta es igual a la presión parcial del disolvente en fase vapor (\(P_{d}\)) en equilibrio con la disolución:
+            
+            \[\left ( P_{d}^{*} \right )_{e} = P_{d} = \left ( 1 - x \right ) P_{d}^{*}\]
+            \[\text{Con }\Delta P_{d}^{*} = P_{d}^{*} - \left ( P_{d}^{*} \right )_{e} \Rightarrow \Delta P_{d}^{*} = P_{d}^{*} - \left ( 1 - x \right ) P_{d}^{*} \Rightarrow\]
+            \begin{equation}
+            \label{eq:dis_presion_vapor}
+                \Delta P_{d}^{*} = x P_{d}^{*}
+            \end{equation}
+            
+            El efecto de la disminución de la presión de vapor del disolvente debido a la presencia del soluto (no volátil) (\textbf{Ecuación \ref{eq:dis_presion_vapor}}) es que a una determinada presión éste hierve a una temperatura mayor y se congela a una temperatura menor que el disolvente puro a la misma presión.
+        
+            \textbf{Aumento en el punto de ebullición}:
+            
+            \begin{equation}
+            \label{eq:aum_punto_ebull}
+                \Delta T_{e} = T_{se} - T_{0e} = \frac{R{T_{0e}}^{2}}{\Delta \widehat{H}_{V}} x
+            \end{equation}
+            
+            \textbf{Disminución en el punto de congelación}:
+            
+            \begin{equation}
+            \label{eq:dis_punto_cri}
+                \Delta T_{f} = T_{0f} - T_{sf} = \frac{R{T_{0f}}^{2}}{\Delta \widehat{H}_{F}} x
+            \end{equation}
+            
+        \subsubsection{Sistema Líquido-Líquido}
+        
+            \subsubsubsection{Líquidos inmiscibles y parcialmente miscibles}
+            
+            \textbf{Líquidos Miscibles}:
+            
+            \begin{quote}
+                \textit{\say{Si al mezclarse en cualquier proporción forman una solución homogénea (1 fase).}}
+            \end{quote}
+            
+            \textbf{Líquidos Parcialmente Miscibles}:
+            
+            \begin{quote}
+                \textit{\say{Si dos líquidos forman una fase bajo ciertas condiciones y dos fases en otras condiciones.}}
+            \end{quote}
+            
+            \textbf{Líquidos Inmiscibles}:
+            
+            \begin{quote}
+                \textit{\say{Cuando dos sustancias no tienen la capacidad de constituir una solución homogénea.}}
+            \end{quote}
+            
+            \textbf{Coeficiente de Distribución}:
+            
+            Al añadir una tercera sustancia a una mezcla de dos fases líquidas, se distribuye de acuerdo con su solubilidad relativa en cada fase (extracción en fase líquida).
+            
+            \begin{quote}
+                \textit{\say{Sean \(A\) y \(S\) dos líquidos \textbf{casi inmiscibles} y \(B\) un soluto, el coeficiente de distribución (o partición) de \(B\) se define como la razón entre la fracción de \(B\) en \(S\) y la fracción de \(B\) en \(A\).}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:coef_distribucion}
+                K = \frac{x_{B}^{S}}{x_{B}^{A}}
+            \end{equation}
+            
+            \subsubsubsection{Sistemas Ternarios}
+            
+            Para sistemas de tres componentes, parcialmente miscibles, su comportamiento se presenta en un diagrama de fases triangular, donde cada vértice representa un componente, y los lados representan soluciones binarias. Las líneas de unión indican las composiciones de las fases en equilibrio.
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/diagramas/sistema_ternario.png}
+                \caption{Sistema ternario Metil isobutil cetona-Acetona-Agua}
+                \label{fig:sistema_ternario}
+            \end{figure}
+        
+    \subsection{Procesos Intermitentes}
+    
+    El proceso ocurre en un período de tiempo entre \(t_{0}\) y \(t_{f}\). Considera cantidades iniciales y finales de masa en el sistema. Recordando \textbf{Ecuación \ref{eq:balance_masa}}:
+    \[\text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo} = \text{Acumulación}\]
+    
+        \subsubsection{Sin reacción}
+        \[\text{Acumulación} = \text{Flujo entrada} - \text{Flujo salida} + \cancelto{0}{\text{Generación}} - \cancelto{0}{\text{Consumo}}\]
+        
+        \textbf{Masa Total}:
+        
+        \begin{itemize}
+            \item Forma diferencial:
+            \begin{equation}
+            \label{eq:proc_int_sin_tot_dif}
+                \frac{dm_{sis}}{dt} = \sum_{\text{entrada}}\dot{m}_{j} - \sum_{\text{salida}}\dot{m}_{j}
+            \end{equation}
+            \item Forma integral:
+            \begin{equation}
+            \label{eq:proc_int_sin_tot_int}
+                m_{sis, f} - m_{sis, 0} = \sum_{\text{entrada}}\left ( \int_{t_{0}}^{t_{f}}\dot{m}_{j}dt \right ) - \sum_{\text{salida}}\left ( \int_{t_{0}}^{t_{f}}\dot{m}_{j}dt \right )
+            \end{equation}
+        \end{itemize}
+        
+        \textbf{Masa de un componente \(i\)}:
+        
+        \begin{itemize}
+            \item Forma diferencial:
+            \begin{equation}
+            \label{eq:proc_int_sin_i_dif}
+                \frac{dm_{i, sis}}{dt} = \sum_{\text{entrada}}\dot{m}_{ij} - \sum_{\text{salida}}\dot{m}_{ij}
+            \end{equation}
+            \item Forma integral:
+            \begin{equation}
+            \label{eq:proc_int_sin_i_int}
+                m_{i, sis, f} - m_{i, sis, 0} = \sum_{\text{entrada}}\left ( \int_{t_{0}}^{t_{f}}\dot{m}_{ij}dt \right ) - \sum_{\text{salida}}\left ( \int_{t_{0}}^{t_{f}}\dot{m}_{ij}dt \right )
+            \end{equation}
+        \end{itemize}
+    
+        Con \(i\) componentes y \(j\) corrientes.
+        
+        \subsubsection{Con reacción}
+        \[\text{Acumulación} = \text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo}\]
+        
+        \textbf{Masa de un componente \(i\)}:
+        
+        \begin{itemize}
+            \item Forma diferencial:
+            \begin{equation}
+            \label{eq:proc_int_con_i_dif}
+                \frac{dm_{i, sis}}{dt} = \sum_{\text{entrada}}\dot{m}_{ij} - \sum_{\text{salida}}\dot{m}_{ij} + \sum_{\text{reacción}}\dot{R}_{ik}
+            \end{equation}
+            \item Forma integral:
+            \begin{equation}
+            \label{eq:proc_int_con_i_int}
+                m_{i, sis, f} - m_{i, sis, 0} = \sum_{\text{entrada}}\left ( \int_{t_{0}}^{t_{f}}\dot{m}_{ij}dt \right ) - \sum_{\text{salida}}\left ( \int_{t_{0}}^{t_{f}}\dot{m}_{ij}dt \right ) + \sum_{\text{reacción}}\left ( \int_{t_{0}}^{t_{f}}\dot{R}_{ik}dt \right )
+            \end{equation}
+        \end{itemize}
+        
+        Con \(k\) reacciones.
+    
+\newpage
+            
+\section{Balances de Energía en Estado Estacionario}
+    
+\begin{quote}
+    \say{\textit{El ingeniero de diseño de procesos deberá \textbf{cuantificar la energía} que entra o sale de cada operación unitaria y determinar las necesidades globales de energía para el proceso. \textbf{Los costos asociados} a los requerimientos energéticos de los procesos deben ser considerados en el costo total de los procesos.}}
+\end{quote}
+
+Los \textbf{balances de energía} permiten determinar los requerimientos energéticos de un proceso y posibles vías de ahorro de energía.
+
+La energía puede adoptar diferentes formas, todas ellas convertibles directa o indirectamente de una en otra.
+
+Análogamente a lo establecido para el Balance de Masa, se definen los límites del sistema y consideramos lo que cruza dichos límites.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{img/diagramas/balance_energia.png}
+    \caption[Conversión de Energía]{Conversión de Energía \cite{martinez_salas_transformacion_2013}}
+    \label{fig:balance_energia}
+\end{figure}
+
+\begin{equation}
+\label{eq:balance_energia}
+    E_{\text{acumulada}} = E_{\text{entra}} - E_{\text{sale}} + E_{\text{producida}} - E_{\text{consumida}}
+\end{equation}
+
+    \subsection{Formas de Energía}
+    
+    Principales formas de energía a considerar en una corriente.
+    
+        \subsubsection{Energía Potencial}
+        
+        Debida a la posición en un campo potencial (campo gravitacional o magnético).
+        
+        \begin{equation}
+        \label{eq:e_potencial}
+            E_{P} = mgh
+        \end{equation}
+        
+        Con \(m\) masa, \(g\) acelaración de gravedad y \(h\) altura.
+        
+        \subsubsection{Energía Cinética}
+        
+        Debida al movimiento del sistema como un todo respecto a algún marco de referencia.
+        
+        \begin{equation}
+        \label{eq:e_cinetica}
+            E_{K} = \frac{mv^{2}}{2}
+        \end{equation}
+        
+        Con \(v\) velocidad.
+        
+        \subsubsection{Energía Interna}
+        
+        Debida al movimiento de las moléculas con respecto al centro de masa del sistema, al movimiento de rotación y de vibración, a las interacciones electromagnéticas de las moléculas y al movimiento y las interacciones de los constituyentes atómicos o subatómicos de las moléculas.
+        
+        \begin{equation}
+        \label{eq:e_interna}
+            \widehat{U} \cong f(T)
+        \end{equation}
+        
+        Con \(T\) temperatura y \(f\) una función de \(T\).
+        
+        \subsubsection{Función de Estado}
+        
+        No depende de la trayectoria.
+        
+    \subsection{Transferencia de Energía}
+    
+    Un sistema no contiene calor, \textbf{pero la transferencia de calor o trabajo} hacia o desde el sistema, altera su contenido de \textbf{energía interna}.
+    
+        \subsubsection{Trabajo \(W\)}
+        
+        Transferencia de energía debido a la acción de una fuerza mecánica que vence una resistencia al recorrer una distancia.
+        
+        \textbf{Convención}:
+        
+        \begin{itemize}
+            \item \(W > 0\) (positivo) si el sistema \textbf{realiza} trabajo.
+            \item \(W < 0\) (negativo) si se realiza trabajo \textbf{sobre} el sistema.
+        \end{itemize}
+        
+        \textbf{Formas de energía en \(W\)}:
+        
+        \begin{itemize}
+            \item \textbf{Energía Mecánica}: En los procesos se debe a la agitación, vibración, bombeo, soplado, compresión, etc.
+            \item \textbf{Energía Eléctrica}: En los equipos eléctricos y electrónicos asociados a los equipos de proceso. Es muy importante en los procesos electroquímicos: pilas, baterías, electro obtención, electro refinación, electrodiálisis, etc.
+        \end{itemize}
+        
+        \subsubsection{Calor \(Q\)}
+        
+        Transferencia de energía ocasionada por una diferencia de temperaturas.
+        
+        \textbf{Convención}:
+        
+        \begin{itemize}
+            \item \(Q > 0\) (positivo) si se \textbf{agrega} calor al sistema.
+            \item \(Q < 0\) (negativo) si se \textbf{extrae} calor del sistema.
+        \end{itemize}
+        
+        La temperatura representa la velocidad promedio del movimiento molecular en esa materia. Ejemplos de expresiones para la velocidad de transferencia de calor:
+        
+        \begin{itemize}
+            \item Conducción:
+                \begin{equation}
+                \label{eq:calor_conduccion}
+                    \dot{Q} = -kA \nabla T
+                \end{equation}
+            \item Convección:
+                \begin{equation}
+                \label{eq:calor_conveccion}
+                    \dot{Q} = hA \left ( T_{\inf} - T_{w} \right )
+                \end{equation}
+            \item Radiación:
+                \begin{equation}
+                \label{eq:calor_radiacion}
+                    \dot{Q} = \sigma \left ( {T_{\inf}}^{4} - {T_{w}}^{4} \right )
+                \end{equation}
+        \end{itemize}
+        
+        \subsubsection{Entalpía}
+        
+        La entalpía H es una función termodinámica definida en la \textbf{Ecuación \ref{eq:entalpia}}
+        
+        \begin{equation}
+        \label{eq:entalpia}
+            H = U + pV
+        \end{equation}
+        
+        Se puede decir que la entalpía caracteriza la capacidad de un sistema para transferir calor hacia otro sistema. En un proceso a \underline{presión constante} tenemos:
+        
+        \[\overset{\text{\textbf{Ecuación \ref{eq:entalpia}}}}{\Rightarrow} dH = dU + d(pV) = dU + pdV + Vdp \overset{p = ctr}{=} dU + pdV\]
+        
+        Si no se produce otro trabajo que el de expansión:
+        \begin{equation}
+        \label{eq:trabajo_expansion}
+            W = pdV
+        \end{equation}
+        
+        Del primer principio de la termodinámica:
+        \begin{equation}
+        \label{eq:primer_principio}
+            dU = Q - W
+        \end{equation}
+        
+        Reemplazando la \textbf{Ecuación \ref{eq:trabajo_expansion}} en la \textbf{Ecuación \ref{eq:primer_principio}}:
+        \[dU = Q - pdV \Leftrightarrow Q = dU + pdV\]
+        
+        Igualando la \textbf{Ecuación \ref{eq:entalpia}} en su forma diferencial y la ecuación anterior se obtiene:
+        \begin{equation}
+        \label{eq:h_q}
+            dH = Q
+        \end{equation}
+        
+        \begin{quote}
+            \textit{\say{La variación de la entalpía es igual al calor absorbido.}}
+        \end{quote}
+        
+        En sistemas sólidos o líquidos, la variación de \(pV\) es pequeña y:
+        \begin{equation}
+        \label{eq:sis_sol_liq_e_int}
+            dU \cong dH
+        \end{equation}
+    
+    \subsection{Balance de Energía sin Reacción Química}
+    
+        \subsubsection{Sistemas Cerrados}
+        
+        No intercambian masa, sólo energía.
+        
+        \begin{equation}
+        \label{eq:energia_sis_cerrado}
+            \Delta E = \Delta \left ( U + K + P \right ) = Q - W
+        \end{equation}
+        
+        Estado estacionario:
+        \begin{equation}
+        \label{eq:energia_sis_cerrado_estacionario}
+            \Delta E = 0 \rightarrow Q = W
+        \end{equation}
+        
+        \subsubsection{Sistemas Abiertos}
+        
+        Intercambian masa y energía.
+        
+        En forma general:
+        \begin{equation}
+        \label{eq:energia_sis_abierto}
+            \begin{matrix}
+                 \Delta E & = & \Delta \left ( U + K + P \right ) & + & \Delta \left ( pV \right ) & + Q - W \\
+                  & & \text{Energía transferida con la masa} & & \text{Trabajo de flujo} &
+            \end{matrix}
+        \end{equation}
+        \[\Delta \widehat{H} = \Delta \widehat{U} + \Delta \left ( pV \right ) \Rightarrow\]
+        \[\Delta E = m_{\text{entra}} \left ( \widehat{H} + \widehat{K} + \widehat{P} \right )_{\text{entra}} - m_{\text{sale}} \left ( \widehat{H} + \widehat{K} + \widehat{P} \right )_{\text{sale}} + Q - W\]
+        
+        Estado estacionario:
+        \begin{equation}
+        \label{eq:energia_sis_abierto_estacionario}
+            \Delta E = 0 \rightarrow m_{\text{sale}} \left ( \widehat{H} + \widehat{K} + \widehat{P} \right )_{\text{sale}} - m_{\text{entra}} \left ( \widehat{H} + \widehat{K} + \widehat{P} \right )_{\text{entra}} = Q - W
+        \end{equation}
+    
+    \subsection{Balance de Energía con y sin reacción química}
+    
+        \subsubsection{Capacidad calorífica y calor específico}
+        
+        Capacidad calorífica \(C\) es extensiva, calor específico \(\widehat{C}\) es intensiva y es por cantidad de materia (masa o mol):
+        \[\widehat{C} = \frac{C}{m} \vee \widehat{C} = \frac{C}{n}\]
+        
+            \subsubsubsection{Capacidad calorífica a presión constante (\(C_{P}\))}
+            
+            \begin{quote}
+                \textit{\say{Razón de incremento de la entalpía (\(H\)) por unidad de incremento de la temperatura a presión constante.}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:c_p}
+                C_{P} = \left ( \frac{\partial H}{\partial T} \right )_{P}
+            \end{equation}
+            
+            \subsubsubsection{Capacidad calorífica a volumen constante (\(C_{V}\))}
+            
+            \begin{quote}
+                \textit{\say{Razón de incremento de la energía interna (\(U\)) por unidad de incremento de la temperatura a volumen constante.}}
+            \end{quote}
+            
+            \begin{equation}
+            \label{eq:c_v}
+                C_{V} = \left ( \frac{\partial U}{\partial T} \right )_{V}
+            \end{equation}
+            
+            \subsubsubsection{Propiedades}
+            
+            Líquidos y sólidos:
+            \[C_{P} = C_{V}\]
+            
+            Gases Ideales:
+            \[C_{P} = C_{V} + R\]
+            
+            Con \(R\) constante de los gases ideales.
+            
+            Tanto \(C_{P}\) como \(C_{V}\) son propiedades específicas de las sustancias y se encuentran tabulados.
+            
+            Tanto \(C_{P}\) como \(C_{V}\) son funciones de la temperatura y se expresan como polinomios cuyos parámetros se encuentran en tablas:
+            \[C_{P} = A + BT + C{T}^{2} + D{T}^{3}\]
+            
+            \(C_{P}\) se puede calcular en forma gráfica \cite{perry_perrys_1963}.
+            
+            \subsubsubsection{\(C_{P}\) promedio}
+            
+            \begin{equation}
+            \label{eq:cp_promedio}
+                \overline{C_{P}} = \frac{1}{\left ( T - T_{Ref} \right )} \int_{T_{Ref}}^{T} C_{P} dT
+            \end{equation}
+            
+            \subsubsubsection{\(C_{P}\) mezcla de gas ideal}
+            
+            \begin{equation}
+            \label{eq:cp_mezcla}
+                C_{P, \text{mezcla}} = \int_{i = 1}^{n} y_{i}C_{P, i}
+            \end{equation}
+        
+        \subsubsection{Cálculo de entalpía}
+        
+            \subsubsubsection{Simplificaciones}
+            
+            \begin{itemize}
+                \item Soluciones ideales, no hay entalpía de mezcla
+                \[H_{j} = \int_{m=1}^{N_{SP}} x_{mj}H_{mj}\]
+                
+                Con \(H_{j}\) entalpía en un mol de la mezcla en la corriente \(j\), \(x_{mj}\) fracción molar de \(m\) en la corriente \(j\) y \(H_{mj}\) entalpía molar de \(m\) a la temperatura y presión de la corriente \(j\).
+                
+                \item El término dependiente de \(P\) puede ser despreciado:
+                \[dH_{m} = C_{P_{m}}dT\]
+            \end{itemize}
+            
+            \subsubsubsection{Estado de referencia}
+            
+            \begin{itemize}
+                \item La referencia más utilizada es \(25 [{}^{o}C]\) (\(298 [K]\)) y \(1 [atm]\), para la entalpía de especies puras.
+                
+                \item Considerando este estado de referencia el calor de reacción ya se encuentra implícito en las entalpías de cada una de las especies:
+                \[\Delta \widehat{H}_{i} = \Delta \widehat{H}_{fi}^{0} + \int_{298}^{T}C_{P_{i}}dT\]
+                
+                Si no existe cambio de fase. Con \(\Delta \widehat{H}_{fi}^{0}\) calor de formación estándar de \(i\) a \(25 [{}^{o}C]\) y \(1 [atm]\).
+                
+                \item Utilizando \(\overline{C_{P}}\):
+                \[\Delta \widehat{H}_{i} = \Delta \widehat{H}_{fi}^{0} + \overline{C_{P}} \left ( T - 298 \right )\]
+            \end{itemize}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/graficos/H_P_refrigerante.png}
+                \caption[Diagrama Presión/Entalpía]{Diagrama Presión/Entalpía para el refrigerante 134a \cite{cengel_termodinamica_2012}}
+                \label{fig:p_h_entalpia}
+            \end{figure}
+        
+            \subsubsubsection{Cambios de fase}
+            
+            Si en un proceso se produce un cambio de fase se debe incluir los calores relacionados al cambio de fase:
+            \begin{equation}
+            \label{eq:entalpia_cambio_fase}
+                \Delta \widehat{H}_{i} = \Delta \widehat{H}_{fi}^{0} + \overline{C_{P,i,\text{fase }1}} \left ( T_{cf} - T_{ref} \right ) + \lambda_{i} + \overline{C_{P,i,\text{fase }2}} \left ( T_{f} - T_{cf} \right )
+            \end{equation}
+            
+            Con \(C_{P, i}\) calor especifico o capacidad calorífica, \(\lambda_{i}\) calor de cambio de fase de \(i\) a la temperatura de cambio de fase, \(T_{cf}\) temperatura de cambio de fase y \(T_{Ref}\) temperatura de referencia.
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.7\textwidth]{img/graficos/entalpia_fase.png}
+                \caption{Entalpía de cambio de fase en función de la temperatura}
+                \label{fig:entalpia_fase}
+            \end{figure}
+            
+            \subsubsubsection{Calor de Reacción}
+            
+            El calor de reacción se expresa como:
+            \begin{equation}
+            \label{eq:calor_reaccion}
+                \Delta H_{R} = \int_{i=1}^{N_{C}} \gamma_{i} H_{i}
+            \end{equation}
+            
+            Con \(\gamma_{i}\) coeficiente estequiométrico , positivo para los productos y negativo para los reactantes.
+            
+            \subsubsubsection{Cambios de Entalpía}
+            
+            \begin{itemize}
+                \item \(\Delta H_{R} > 0\) (positivo) si la reacción es \textbf{endotérmica}.
+                \item \(\Delta H_{R} < 0\) (negativo) si la reacción es \textbf{exotérmica}.
+            \end{itemize}
+            
+        \subsubsection{Procesos de Combustión}
+        
+        Ecuaciones químicas básicas en procesos de combustión:
+        
+        \[
+        \begin{matrix}
+             C_{coke} & + & O_{2} & \rightarrow & C{O}_2 & & & & \Delta H_{R} = -96590 \left [ \frac{kcal}{kmol\;C} \right ] \\
+             C_{coke} & + & \frac{1}{2} O_{2} & \rightarrow & CO & & & & \Delta H_{R} = -29000 \left [ \frac{kcal}{kmol\;C} \right ] \\
+             CO & + & \frac{1}{2} O_{2} & \rightarrow & C{O}_2 & & & & \Delta H_{R} = -67590 \left [ \frac{kcal}{kmol\;CO} \right ] \\
+             H_{2} & + & \frac{1}{2} O_{2} & \rightarrow & H_{2}O(vap) & & & & \Delta H_{R} = -57750 \left [ \frac{kcal}{kmol\;H_{2}} \right ] \\
+             H_{2} & + & \frac{1}{2} O_{2} & \rightarrow & H_{2}O(liq) & & & & \Delta H_{R} = -68260 \left [ \frac{kcal}{kmol\;H_{2}} \right ] \\
+             S & + & O_{2} & \rightarrow & S{O}_2 & & & & \Delta H_{R} = -70920 \left [ \frac{kcal}{kmol\;S} \right ] \\
+             C{H}_{4} & + & 2 O_{2} & \rightarrow & C{O}_2 & + & 2{H}_{2}O(vap) & & \Delta H_{R} = -191600 \left [ \frac{kcal}{kmol} \right ] \\
+             C{H}_{4} & + & 2 O_{2} & \rightarrow & C{O}_2 & + & 2{H}_{2}O(liq) & & \Delta H_{R} = -212620 \left [ \frac{kcal}{kmol} \right ]
+        \end{matrix}
+        \]
+        \[{C}_{m}{H}_{n} + \left ( m + \frac{n}{4}\right ) O_{2} \rightarrow m C{O}_{2} + \frac{n}{2} {H}_{2}O\]
+        
+            
+            \subsubsubsection{Poder calorífico}
+            
+            \begin{quote}
+                \textit{\say{El \textbf{poder calorífico} (\(PC\)) de un combustible es la cantidad de energía térmica generada durante la combustión total de una unidad física de combustible.}}
+            \end{quote}
+            
+            El \(PC\) es positivo (\(PC > 0\)) mientras que el \(\Delta H_{\text{combustión}}\) es negativo (\(\Delta H_{\text{combustión}} < 0\)).
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=.7\textwidth]{img/esquemas/pc.png}
+                \caption{Diagrama de la entalpía de combustión}
+                \label{fig:poder_calorifico}
+            \end{figure}
+            
+            \textbf{Poder calorífico a presión constante (\(PC_{P}\))}:
+            
+            \begin{quote}
+                \textit{\say{Combustión a presión constante (calorímetro de JUNKERS, para los combustibles gaseosos o líquidos volátiles) que permite determinar \(PC_{P}\).}}
+            \end{quote}
+            
+            \textbf{Poder calorífico a volumen constante (\(PC_{V}\))}:
+            
+            \begin{quote}
+                \textit{\say{Combustión a volumen constante (bomba calorimétrica de MAHLER, para los combustibles sólidos o líquidos) que permite determinar el \(PC_{V}\).}}
+            \end{quote}
+            
+            En el caso de un gas ideal se cumple la \textbf{Ecuación \ref{eq:pc_gas_ideal}}.
+            \begin{equation}
+            \label{eq:pc_gas_ideal}
+                {PC}_{P} - {PC}_{V} = P \left ( V_{i} - V_{f} \right )
+            \end{equation}
+            
+            Con \(P\) la presión de combustión, \(V_{i}\) volumen inicial y \(V_{f}\) volumen final.
+            
+            \begin{quote}
+                \textit{\say{La diferencia entre \(PC_{P}\) y \(PC_{V}\) es generalmente baja y nula si la combustión no se acompaña de una variación del número total de moles.}}
+            \end{quote}
+            
+            \textbf{Estado de los productos}:
+            
+            Si los productos de combustión contienen agua, hay que precisar si el agua está en estado de vapor o de liquido.
+            
+            El \textbf{poder calorífico superior} es aquel calculado considerando el agua en estado liquido, mientras que el \textbf{poder calorífico inferior} se calcula considerando el agua en estado de vapor en los productos de la combustión.
+            
+            La diferencia entre ambos corresponde entonces al calor de vaporización del agua a \(298 [K]\) y \(1 [atm]\).
+            
+            \subsubsubsection{Combustión neutra teórica}
+            
+            \begin{quote}
+                \textit{\say{Combustión completa que se consigue con una mezcla estequiométrica combustible-comburente, para la valoración energética del combustible.}}
+            \end{quote}
+            
+            \subsubsubsection{Combustión oxidante completa}
+            
+            \begin{quote}
+                \textit{\say{Para quemar totalmente el combustible, es necesario ponerlo en presencia de una cantidad de comburente más elevada que la estequiométrica. Este \textbf{exceso de comburente} se encuentra íntegramente en los productos de la combustión que en este caso se llama combustión oxidante completa.}}
+            \end{quote}
+            
+            \subsubsubsection{Temperatura de llama}
+            
+            \begin{quote}
+                \textit{\say{Temperatura máxima permitida por la termodinámica para los gases resultantes de la combustión en fase gaseosa de reactivos perfectamente mezclados.}}
+            \end{quote}
+            
+            También se le conoce como \textbf{temperatura adiabática} o \textbf{temperatura teórica de combustión}.
+            
+            Esta temperatura nunca se consigue en la práctica, se calcula en base al balance de energía, considerando el \textbf{sistema adiabático} y \(W=  0\).
+            
+            La temperatura de llama depende del exceso de comburente, de la temperatura de entrada del comburente y del posible enriquecimiento de aire en oxígeno.
+
+\section{Balances de Masa y Energía en Estado no Estacionario}
+
+Un proceso se considera como estacionario cuando todas las variables del proceso (\(T\), \(P\), \(F\), \(x_{i}\)) son independientes del tiempo.
+
+Si una de las variables del proceso \textbf{depende del tiempo}, el proceso \textbf{no es estacionario}.
+
+    \subsection{Balances de Masa}
+    
+    Un proceso puede ser considerado como estacionario desde el punto de vista del balance de masa y no del punto de vista del balance de energía.
+    
+    Recordando la \textbf{Ecuación \ref{eq:balance_masa}}:
+    \[\text{Acumulación} = \text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo}\]
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=.73\textwidth]{img/esquemas/balance_masa_ns.png}
+        \caption{Volumen de control Proceso No Estacionario}
+        \label{fig:vol_control_n_s}
+    \end{figure}
+    
+    \textbf{Definiciones (Proceso no Estacionario)}:
+    \[
+    \begin{array}{crl}
+         \rho_{A} & := & \frac{\text{masa de A}}{\text{volumen}} \text{(densidad)} \\
+         V & := & \text{Volumen total} \\
+         v & := & \text{Velocidad del fluido} \\
+         S & := & \text{Área transversal} \\
+         \left ( \rho_{A} V \right )_{t + \Delta t} - \left ( \rho_{A} V \right )_{t} & := & \text{Acumulación} \\
+         \rho_{A} v S \Delta t {|}_{1} - \rho_{A} v S \Delta t {|}_{2} & := & \text{Flujo neto } \left (\text{Entra} - \text{Sale} \right )\\
+         b_{A}\Delta t & := & \text{Flujo neto a través de límites indefinidos} \\
+         r_{A}V\Delta t & := & \text{Término de generación y/o consumo} \\
+         r_{A} > 0 & := & \text{Generación por unidad de volumen} \\
+         r_{A} < 0 & := & \text{Consumo por unidad de volumen}
+    \end{array}
+    \]
+    
+        \subsubsection{Balance Global}
+        \begin{equation}
+        \label{eq:balance_masa_ns_global}
+            \rho V {|}_{t + \Delta t} - \rho V {|}_{t} = \rho v S \Delta t {|}_{S_{1}} - \rho v S \Delta t {|}_{S_{2}} + b \Delta t
+        \end{equation}
+        
+        Con \(b \Delta t\) el transporte a través de superficies distintas a \(S_{1}\) y \(S_{2}\) (ver \textbf{Figura \ref{fig:vol_control_n_s}}).
+        \[\overset{/\Delta t}{\Rightarrow} \frac{\rho V {|}_{t + \Delta t} - \rho V {|}_{t}}{\Delta t} = \rho v S {|}_{S_{1}} - \rho v S {|}_{S_{2}} + b \overset{\Delta t \rightarrow 0}{\Rightarrow}\]
+        
+        Versión diferencial:
+        \begin{equation}
+        \label{eq:balance_masa_ns_global_dif}
+            \frac{d\rho V}{dt} = \left ( \rho v S \right )_{S_{1}} - \left ( \rho v S \right )_{S_{1}} + b
+        \end{equation}
+        
+        \subsubsection{Balance por especie}
+        \begin{equation}
+        \label{eq:balance_masa_ns_especie}
+            \rho_{A} V {|}_{t + \Delta t} - \rho_{A} V {|}_{t} = \rho_{A} v S \Delta t {|}_{S_{1}} - \rho_{A} v S \Delta t {|}_{S_{2}} + b_{A} \Delta t + r_{A} V \Delta t
+        \end{equation}
+        
+        Con \(b_{A} \Delta t\) el transporte a través de superficies distintas a \(S_{1}\) y \(S_{2}\) (ver \textbf{Figura \ref{fig:vol_control_n_s}}) y \(r_{A} V \Delta t\) la reacción que involucra la especie \(A\).
+        \[\overset{/\Delta t}{\Rightarrow}\;\;\;\overset{\Delta t \rightarrow 0}{\Rightarrow}\]
+        
+        Versión diferencial:
+        \begin{equation}
+        \label{eq:balance_masa_ns_especie_dif}
+            \frac{d\rho_{A} V}{dt} = \left ( \rho_{A} v S \right )_{S_{1}} - \left ( \rho_{A} v S \right )_{S_{1}} + b_{A} + r_{A} V 
+        \end{equation}
+    
+    \subsection{Balances de masa con reacción}
+    
+    Recordando \textbf{Ecuación \ref{eq:balance_masa}}:
+    \[\text{Acumulación} = \text{Flujo entrada} - \text{Flujo salida} + \text{Generación} - \text{Consumo}\]
+    
+        \subsubsection{Grado de Avance}
+    
+        \begin{figure}
+            \centering
+            \includegraphics[width=.6\textwidth]{img/esquemas/process_rxn.png}
+            \caption{Reacción química en proceso no estacionario}
+            \label{fig:bm_ns_rxn}
+        \end{figure}
+        \[aA + bB \rightarrow cC + dD\]
+        
+        Con \textbf{grado de avance} (\textbf{Ecuación \ref{eq:grado_avance}}).
+        \begin{equation}
+        \label{eq:grado_avance}
+            \dot{\xi} = \frac{1}{a} r_{A} = \frac{1}{b} r_{B} = -\frac{1}{c} r_{C} = \frac{1}{d} r_{D}
+        \end{equation}
+        
+        \subsubsection{Balance global}
+        
+            \subsubsubsection{Balance diferencial}
+            \begin{equation}
+            \label{eq:bm_rxn_global_diff}
+                \frac{dm}{dt} = \sum_{j \text{ entra}} \dot{m}_{j} - \sum_{j \text{ sale}} \dot{m}_{j}
+            \end{equation}
+            \begin{equation}
+            \label{eq:bm_rxn_global_diff_mol}
+                \frac{dn}{dt} = \sum_{j \text{ entra}} \dot{n}_{j} - \sum_{j \text{ sale}} \dot{n}_{j} + \sum_{k \text{ reacciones}} \left ( \sum_{i \text{ compuestos}} \gamma_{i,k} \right ) \dot{\xi}_{k}
+            \end{equation}
+            
+            Con \(\gamma_{i,k}\) coeficiente estequiométrico de \(i\) en la reacción \(k\) y \(\dot{\xi}_{k}\) grado de avance de la reacción \(k\).
+            
+            \subsubsubsection{Balance integral}
+            \begin{equation}
+            \label{eq:bm_rxn_global_int}
+                m_{f} - m_{0} = \sum_{j \text{ entra}} \left ( \int_{t_{0}}^{t_{f}} \dot{m}_{j} dt \right ) - \sum_{j \text{ sale}} \left ( \int_{t_{0}}^{t_{f}} \dot{m}_{j} dt \right )
+            \end{equation}
+            \begin{equation}
+            \label{eq:bm_rxn_global_int_mol}
+                n_{f} - n_{0} = \sum_{j \text{ entra}} \left ( \int_{t_{0}}^{t_{f}} \dot{n}_{j} dt \right ) - \sum_{j \text{ sale}} \left ( \int_{t_{0}}^{t_{f}} \dot{n}_{j} dt \right ) + \sum_{k \text{ reacciones}} \sum_{i \text{ compuestos}} \left ( \int_{t_{0}}^{t_{f}} \gamma_{i,k} \dot{\xi}_{k} dt \right )
+            \end{equation}
+        
+        \subsubsection{Balance por especie}
+        
+            \subsubsubsection{Balance diferencial}
+            \begin{equation}
+            \label{eq:bm_rxn_sp_diff}
+                \frac{d{m}_{i}}{dt} = \sum_{j \text{ entra}} \dot{m}_{i,j} - \sum_{j \text{ sale}} \dot{m}_{i,j} + \sum_{k \text{ reacciones}} M_{i}\gamma_{i,k}\dot{\xi}_{k}
+            \end{equation}
+            \begin{equation}
+            \label{eq:bm_rxn_sp_diff_mol}
+                \frac{d{n}_{i}}{dt} = \sum_{j \text{ entra}} \dot{n}_{i,j} - \sum_{j \text{ sale}} \dot{n}_{i,j} + \sum_{k \text{ reacciones}} \gamma_{i,k} \dot{\xi}_{k}
+            \end{equation}
+            
+            Con \(M_{i}\) peso molecular de \(i\).
+            
+            \subsubsubsection{Balance integral}
+            \begin{equation}
+            \label{eq:bm_rxn_sp_int}
+                m_{i,f} - m_{i,0} = \sum_{j \text{ entra}} \left ( \int_{t_{0}}^{t_{f}} \dot{m}_{i,j} dt \right ) - \sum_{j \text{ sale}} \left ( \int_{t_{0}}^{t_{f}} \dot{m}_{i,j} dt \right )  + \sum_{k \text{ reacciones}} \left ( \int_{t_{0}}^{t_{f}} M_{i} \gamma_{i,k} \dot{\xi}_{k} dt \right )
+            \end{equation}
+            \begin{equation}
+            \label{eq:bm_rxn_sp_int_mol}
+                n_{i,f} - n_{i,0} = \sum_{j \text{ entra}} \left ( \int_{t_{0}}^{t_{f}} \dot{n}_{i,j} dt \right ) - \sum_{j \text{ sale}} \left ( \int_{t_{0}}^{t_{f}} \dot{n}_{i,j} dt \right )  + \sum_{k \text{ reacciones}} \left ( \int_{t_{0}}^{t_{f}} \gamma_{i,k} \dot{\xi}_{k} dt \right )
+            \end{equation}
+        
+    \subsection{Balance de energía}
+        
+    \begin{figure}
+        \centering
+        \includegraphics[width=.73\textwidth]{img/esquemas/balance_energia_ns.png}
+        \caption{Volumen de control Proceso No Estacionario (análisis de energía)}
+        \label{fig:vol_control_en_n_s}
+    \end{figure}
+    \begin{equation}
+    \label{eq:be_no_s}
+        \begin{matrix}
+             \left ( \rho V \left ( \widehat{U} +\widehat{K} + \widehat{P} \right ) \right )_{t + \Delta t} - \left ( \rho V \left ( \widehat{U} +\widehat{K} + \widehat{P} \right ) \right )_{t} = \\
+             \rho_{e} q_{e} \Delta t \left ( \widehat{U} +\widehat{K} + \widehat{P} \right )_{S_{1}} - \rho_{e} q_{e} \Delta t \left ( \widehat{U} +\widehat{K} + \widehat{P} \right )_{S_{2}} + B \Delta t + \dot{Q} \Delta t - \dot{W}_{T} \Delta t
+        \end{matrix}
+    \end{equation}
+    
+    Con \(\rho\) densidad, \(q\) flujo volumétrico, \(\widehat{U}\) energía interna específica, \(\widehat{K}\) energía cinética específica, \(\widehat{P}\) energía potencial específica, \(B\) flujo a través de límites no definidos (\(\notin \{ S_{1}, S_{2} \} \)), \(\dot{Q}\) flujo de energía debido al calor y \(\dot{W}_{T}\) flujo de energía debido al trabajo total.
+    
+    Versión diferencial:
+    \[\overset{/\Delta t}{\Rightarrow}\;\;\overset{\Delta t \rightarrow 0}{\Rightarrow}\]
+    \[\frac{d \left ( \rho V \left ( \widehat{U} +\widehat{K} + \widehat{P} \right ) \right )}{dt} = \rho_{e} q_{e} \left ( \widehat{U} +\widehat{K} + \widehat{P} \right )_{S_{1}} - \rho_{e} q_{e} \left ( \widehat{U} +\widehat{K} + \widehat{P} \right )_{S_{2}} + B + \dot{Q} - \dot{W}_{T}\]
+    
+    Recordando que:
+    \[W_{T} = pV + W_{E} \wedge H = U + pV\]
+    
+    Con \(pV\) trabajo de flujo y \(W_{E}\) trabajo de eje (mecánico). Reemplzando:
+    \begin{equation}
+    \label{eq:be_no_s_diff}
+        \frac{d \left ( \rho V \left ( \widehat{U} +\widehat{K} + \widehat{P} \right ) \right )}{dt} = \rho_{e} q_{e} \left ( \widehat{H} +\widehat{K} + \widehat{P} \right )_{S_{1}} - \rho_{e} q_{e} \left ( \widehat{H} +\widehat{K} + \widehat{P} \right )_{S_{2}} + B + \dot{Q} - \dot{W}_{E}
+    \end{equation}
+        
+        \subsubsection{Sistemas líquidos sin reacción}
+        
+        Simplificaciones:
+        \begin{itemize}
+            \item Se desprecia \(\widehat{K},\widehat{P}\) vs \(\widehat{U}\).
+            \item No hay intercambio de energía por límites indefindos (\(B=0\)).
+            \item No hay trabajo de eje (\(W_{E}=0\)).
+        \end{itemize}
+        \[\frac{dU}{dt} = \frac{d\left ( \rho V \widehat{U} \right )}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s} + \dot{Q}\]
+        \[\overset{U=H-pV}{\Rightarrow} \frac{dU}{dt} = \frac{dH}{dt} - \frac{d\left ( pV \right )}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s} + \dot{Q}\]
+        \[\overset{\text{Para sistemas líquidos } d(pV) \rightarrow 0}{\Rightarrow} \frac{dH}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s} + \dot{Q} \overset{\text{Recordando } H(T) = \rho V \Delta \widehat{H}_{f}^{0} + \rho V \overline{C}_{P}\left ( T - T_{ref} \right )}{\Rightarrow}\]
+        \begin{equation}
+        \label{eq:be_ns_sis_liquidos_sin_rxn}
+            \frac{dH}{dt} = \frac{d\left (\rho V \overline{C}_{P}T \right )}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s} + \dot{Q}
+        \end{equation}
+    
+    \subsection{Balance de energía con reacción}
+    
+    Recordando \textbf{Ecuación \ref{eq:be_no_s_diff}}.
+    
+        \subsubsection{Sistemas líquidos con reacción}
+        
+        Simplificaciones:
+        \begin{itemize}
+            \item Se desprecia \(\widehat{K},\widehat{P}\) vs \(\widehat{U}\).
+            \item No hay intercambio de energía por límites indefindos (\(B=0\)).
+            \item No hay trabajo de eje (\(W_{E}=0\)) y el sistema es adiabático (\(\dot{Q}=0\))
+        \end{itemize}
+        \[\frac{dU}{dt} = \frac{d\left ( \rho V \widehat{U} \right )}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s}\]
+        \[\overset{U=H-pV}{\Rightarrow} \frac{dU}{dt} = \frac{dH}{dt} - \frac{d\left ( pV \right )}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s}\]
+        \begin{equation}
+        \label{eq:be_ns_rxn_pendiente}
+            \overset{\text{Para sistemas líquidos } d(pV) \rightarrow 0}{\Rightarrow} \frac{dH}{dt} = \rho_{e} q_{e} \widehat{H}_{e} - \rho_{s} q_{s} \widehat{H}_{s}
+        \end{equation}
+        
+        Considerando que \(H\) es una función de \(T,p\) y el número de moles de las especies, se tiene:
+        \begin{equation}
+        \label{eq:be_ns_rxn_cond_h}
+            \frac{dH}{dt} = \frac{\partial H}{\partial T}\frac{\partial T}{\partial t} + \frac{\partial H}{\partial p}\frac{\partial p}{\partial t} + \sum_{i}\frac{\partial H}{\partial n_{i}}\frac{\partial n_{i}}{\partial t}
+        \end{equation}
+        \newpage
+        
+        Simplificaciones:
+        \begin{itemize}
+            \item \(\frac{\partial H}{\partial p}\) es despreciable en sistemas líquidos, y es cero para gases ideales.
+            \item Dado que \(H(T) = \rho V \Delta \widehat{H}_{f}^{0} + \rho V \overline{C}_{P}\left ( T - T_{ref} \right ) \Rightarrow \frac{dH}{dT} = \rho V \overline{C}_{P}\).
+            \item Se definen entalpías molares parciales \(\widehat{H}_{i} = \frac{\partial H}{\partial n_{i}}\).
+            \item El término \(\frac{\partial n_{i}}{\partial t}\) se puede obtener a partir de los balances de masa dado que \(n_{i} = C_{i}V\), luego:
+            \begin{equation}
+            \label{eq:be_ns_rxn_cond_n}
+                \frac{d n_{i}}{dt} = \frac{d(C_{i}V)}{dt} = q_{e} C_{i,e} - q_{s} C_{i,s} + \gamma_{i}(rV)
+            \end{equation}
+            
+            Con \(\gamma_{i}\) coeficiente estequiométrico bajo la convención \(\gamma_{i} > 0\) si \(i\) es producto o \(\gamma_{i} < 0\) si \(i\) es reactivo.
+        \end{itemize}
+        
+        Usando la \textbf{Ecuación \ref{eq:be_ns_rxn_cond_n}} en el producto \(\sum_{i}\frac{\partial H}{\partial n_{i}}\frac{\partial n_{i}}{\partial t}\) de la \textbf{Ecuación \ref{eq:be_ns_rxn_cond_h}}:
+        \[\sum_{i}\frac{\partial H}{\partial n_{i}}\frac{\partial n_{i}}{\partial t} = \sum_{i} \widehat{H}_{i,s} \frac{\partial n_{i}}{\partial t} = q_{e} \sum_{i} C_{i,e} \widehat{H}_{i,s} - q_{s} \sum_{i} C_{i,s} \widehat{H}_{i,s} + rV \sum_{i} \gamma_{i} \widehat{H}_{i,s}\]
+        
+        Aplicando las demás simplificaciones a la \textbf{Ecuación \ref{eq:be_ns_rxn_cond_h}}:
+        \[\frac{dH_{s}}{dt} = \cancelto{\text{Simplificación }H(T) \rightarrow \rho V \overline{C}_{P}}{\frac{\partial H_{s}}{\partial T_{s}}}\frac{\partial T_{s}}{\partial t} + \cancelto{0}{\frac{\partial H_{s}}{\partial p_{s}}}\frac{\partial p_{s}}{\partial t} + \cancelto{\text{Anterior}}{\sum_{i}\frac{\partial H}{\partial n_{i}}\frac{\partial n_{i}}{\partial t}}\]
+        \begin{equation}
+        \label{eq:hs_pendiente_1}
+            \frac{dH_{s}}{dt} =\rho V \overline{C}_{P}\frac{\partial T_{s}}{\partial t} + q_{e} \sum_{i} C_{i,e} \widehat{H}_{i,s} - q_{s} \sum_{i} C_{i,s} \widehat{H}_{i,s} + rV \sum_{i} \gamma_{i} \widehat{H}_{i,s}
+        \end{equation}
+        
+        Por otra parte, Por otra parte, si referimos las entalpías a la temperatura en el sistema (\(T_{s}\)), se tiene:
+        \[\widehat{H}_{i}(T) = \widehat{H}_{i}(T_{s}) + \int_{T_{s}}^{T} C_{P,i} dT\]
+        
+        Donde \(H_{e}(T_{e})\) es la entalpía de la corriente de entrada a la temperatura de entrada y \(H_{s}(T_{s})\) es la entalpía del sistema a la temperatura de de proceso.
+        
+        Si utilizamos \(\overline{{C}_{P}}\):
+        \[\widehat{H}_{i}(T) = \widehat{H}_{i}(T_{s}) + \int_{T_{s}}^{T} C_{P,i} dT \overset{\textbf{Ecuación \ref{eq:cp_promedio}}}{=} \widehat{H}_{i}(T_{s}) + \overline{C_{P,e}} \left ( T_{e} - T_{s} \right )\]
+        
+        Reemplazando lo anterior en la \textbf{Ecuación \ref{eq:be_ns_rxn_pendiente}}.
+        \[\frac{d{H}_{s}}{dt} = \rho_{e} q_{e} \cancelto{\widehat{H}_{e}(T_{e})}{\widehat{H}_{e}} - \rho_{s} q_{s} \widehat{H}_{s} = \rho_{e} q_{e} \widehat{H}_{e}(T_{s}) + \rho_{e} q_{e} \overline{C_{P,e}} \left ( T_{e} - T_{s} \right ) - \rho_{s} q_{s} \widehat{H}_{s}(T_{s})\]
+        \[\overset{\text{Por termodinámica se sabe que } H = \frac{1}{\rho} \sum_{i} C_{i} \widehat{H}_{i}}{\Rightarrow}\]
+        \begin{equation}
+        \label{eq:hs_pendiente_2}
+            \frac{d{H}_{s}}{dt} = \cancel{\rho_{e}} q_{e} \frac{1}{\cancel{\rho_{e}}} \sum_{i} C_{i,e} \widehat{H}_{i, e}(T_{s}) + \rho_{e} q_{e} \overline{C_{P,e}} \left ( T_{e} - T_{s} \right ) - \cancel{\rho_{s}} q_{s} \frac{1}{\cancel{\rho_{s}}} \sum_{i} C_{i,s} \widehat{H}_{i,s}(T_{s})
+        \end{equation}
+        
+        Igualando \(\frac{d{H}_{s}}{dt}\) de las expresiones encontradas usando \textbf{regla de la cadena} (\textbf{Ecuación \ref{eq:hs_pendiente_1}}) y \textbf{balance de energía global} (\textbf{Ecuación \ref{eq:hs_pendiente_2}}).
+        \[
+        \begin{matrix}
+            \rho V \overline{C}_{P}\frac{\partial T_{s}}{\partial t} + q_{e} \sum_{i} C_{i,e} \widehat{H}_{i,s} - q_{s} \sum_{i} C_{i,s} \widehat{H}_{i,s} + rV \sum_{i} \gamma_{i} \widehat{H}_{i,s} \\
+            = q_{e} \sum_{i} C_{i,e} \widehat{H}_{i, e} + \rho_{e} q_{e} \overline{C}_{P,e} \left ( T_{e} - T_{s} \right ) - q_{s} \sum_{i} C_{i,s} \widehat{H}_{i,s}
+        \end{matrix}
+        \]
+        \[\begin{matrix}
+            \rho V \overline{C}_{P}\frac{\partial T_{s}}{\partial t} + \underline{q_{e} \sum_{i} C_{i,e}} \widehat{H}_{i,s} - \cancel{q_{s} \sum_{i} C_{i,s} \widehat{H}_{i,s}} + rV \sum_{i} \gamma_{i} \widehat{H}_{i,s} \\
+            = \underline{q_{e} \sum_{i} C_{i,e} }\widehat{H}_{i, e} + \rho_{e} q_{e} \overline{C}_{P,e} \left ( T_{e} - T_{s} \right ) - \cancel{q_{s} \sum_{i} C_{i,s} \widehat{H}_{i,s}}
+        \end{matrix}\]
+        \[\overset{\Delta H_{R} = \sum_{i} \gamma_{i} \widehat{H}_{i}}{\Rightarrow} \rho V \overline{C}_{P}\frac{\partial T_{s}}{\partial t} = \rho_{e} q_{e} \overline{C}_{P,e} \left ( T_{e} - T_{s} \right ) + q_{e} \sum_{i} C_{i,e} \left ( \widehat{H}_{i,e} - \widehat{H}_{i,s} \right ) - rV \Delta H_{R}\]
+        
+        Para soluciones ideales se tiene que \(H_{i,e}\), \(H_{i,s}\), y en general el término \(\sum_{i} \left ( \widehat{H}_{i,e} - \widehat{H}_{i,s} \right )\) es despreciable frente a \(\Delta H_{R}\). Este término será importante cuando los efectos de calor de mezcla sean considerados. Finalmente, se tiene la \textbf{Ecuación \ref{eq:be_ns_sis_liquidos_rxn}}.
+        \begin{equation}
+        \label{eq:be_ns_sis_liquidos_rxn}
+            \rho V \overline{C}_{P}\frac{\partial T_{s}}{\partial t} = \rho_{e} q_{e} \overline{C}_{P,e} \left ( T_{e} - T_{s} \right ) - rV \Delta H_{R}
+        \end{equation}
+        
+        \textit{Nota}: Todos los términos de entalpía están evaluados a la temperatura del sistema \(T_{s}\).
+    
+        \subsubsection{Sistema Biológico}
+        
+        Balance general de masa y energía:
+        \[\frac{dm}{dt} = \left ( \dot{m}_{in} - \dot{m}_{out} \right ) + \left ( \dot{m}_{gen} - \dot{m}_{cons} \right )\]
+        \[\frac{dH}{dt} = \left ( \dot{H}_{in} - \dot{H}_{out} \right ) + \left ( \dot{H}_{gen} - \dot{H}_{cons} \right )\]
+        
+        En el caso de un estado \textbf{transiente} existen variaciones temporales en \underline{alguna de las variables del sistema}. Como \(m = \rho V\), la variación de energía acumulada es:
+        \[\frac{dH}{dt} = \frac{d \left ( m_{Acc} \cdot C_{P, m} \cdot T \right )}{dt} = \frac{d}{dt} \left ( \sum_{i} m_{i} \cdot C_{P,i} \cdot T \right )\]
+        
+        Para un sistema biológico simplificado con:
+        \[X = X(t) \text{ cantidad de biomasa en el tiempo}\]
+        \[P = P(t) \text{ cantidad de desecho en el tiempo}\]
+        
+        Lo que aplicado a la energía acumulada queda:
+        \[H_{acc}(t) = \sum_{i} m_{i} \cdot C_{P,i} \cdot T = X(t) \cdot C_{P, X} \cdot T + P(t) \cdot C_{P, P} \cdot T \overset{\cdot \frac{d}{dt}}{\Rightarrow}\]
+        
+        Quedando la ecuación de acumulación de energía dada por la biomasa (\textbf{Ecuación \ref{eq:be_biomasa}}).
+        \begin{equation}
+        \label{eq:be_biomasa}
+            \frac{dH_{acc}}{dt} = \left ( \frac{dX}{dt} \cdot C_{P, X} + \frac{dP}{dt} \cdot C_{P, P} \right ) T + \left ( X(t) \cdot C_{P, X} + P(t) \cdot C_{P, P} \right ) \frac{dT}{dt}
+        \end{equation}
+        
+        \textit{Nota}: Esto no considera entrada y salida del sistemam por lo que faltaria agregar: \(\left ( \dot{H}_{in} - \dot{H}_{out} \right )\). Para un sistema batch no existe entrada y salida de masa: \(\left ( \dot{m}_{in} - \dot{m}_{out} \right ) = 0\)
+
+\begin{anexo}
+
+    \section{Gráficos}
+    
+    Algunos gráficos fueron obtenidos de las diapositivas de clase \cite{martinez_basterrechea_iq3311_2021} y otros generados usando Python para fines didácticos. Los códigos de estos últimos están disponibles en el repositorio GitHub público: \url{https://github.com/StarBrand/IQ3311-Graficos}
+    
+    \bibliography{iq3311}
+    
+\end{anexo}
